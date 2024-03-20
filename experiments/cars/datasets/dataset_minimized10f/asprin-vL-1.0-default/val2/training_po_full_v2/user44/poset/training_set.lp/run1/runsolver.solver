@@ -1,0 +1,167 @@
+asprin_vL version 1.0
+Reading from stdin
+-:177:3-30: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#P4)
+
+-:187:3-24: info: atom does not occur in any rule head:
+  preference(#X0,#P1,0,#P2,#P3)
+
+-:202:3-31: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#X4)
+
+-:283:36-48: info: atom does not occur in any rule head:
+  _p_rule(#X0,#X1,#P2,#X3,#X4)
+
+-:557:34-45: info: atom does not occur in any rule head:
+  better(#X0,#P1,#X2,#X3)
+
+-:734:35-45: info: atom does not occur in any rule head:
+  _p_group(#X0,#P1,#X2,#X3)
+
+-:863:38-65: info: atom does not occur in any rule head:
+  preference(#X0,#X1,0,for(#X2),#P3)
+
+-:935:50-58: info: atom does not occur in any rule head:
+  _p_rel(#X0,#P1,#X2,#X3)
+
+-:939:46-59: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:939:61-75: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:945:23-37: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1044:74-85: info: atom does not occur in any rule head:
+  _p_edge(#X0,#X1,#P2,#X3,#X4)
+
+-:1070:64-75: info: atom does not occur in any rule head:
+  _p_edge(#X0,#P1,#X2,#X3,#X4)
+
+-:1190:35-48: info: atom does not occur in any rule head:
+  _p_lits(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1224:25-39: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1246:33-45: info: atom does not occur in any rule head:
+  _p_acyclic(#X0,#P1,#X2,#X3)
+
+-:94:1-16: info: no atoms over signature occur in program:
+  output/3
+
+-:86:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:87:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:88:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+Solving...
+Answer: 1
+preference(1,poset) output(5,eq,1) output(3,eq,4) output(4,eq,10) output(10,eq,9) output(9,eq,5) output(1,eq,7) output(7,eq,6) output(6,eq,8)
+Optimization: 8 0
+Answer: 2
+preference(1,(1,6),2,for(neg(atom(hasFuelCons(2)))),()) preference(1,(1,6),1,for(atom(hasBodyType(1))),()) preference(1,poset) output(4,better,10) output(9,better,5) output(7,better,6) output(10,worse,9) output(1,worse,7) output(5,eq,1) output(3,eq,4) output(6,eq,8)
+Optimization: 5 1
+Answer: 3
+preference(1,(1,6),2,for(neg(atom(hasEngineCap(5)))),()) preference(1,(1,6),1,for(atom(hasBodyType(1))),()) preference(1,poset) output(4,better,10) output(9,better,5) output(7,better,6) output(3,better,4) output(10,worse,9) output(1,worse,7) output(5,eq,1) output(6,eq,8)
+Optimization: 4 1
+Answer: 4
+preference(1,(1,12),1,for(neg(atom(hasEngineCap(2)))),()) preference(1,(1,12),2,for(neg(atom(hasBodyType(2)))),()) preference(1,poset) output(4,better,10) output(9,better,5) output(7,better,6) output(10,better,9) output(1,better,7) output(5,worse,1) output(6,worse,8) output(3,eq,4)
+Optimization: 3 1
+Answer: 5
+preference(1,(1,12),1,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,6),2,for(neg(atom(hasEngineCap(5)))),()) preference(1,(1,12),2,for(neg(atom(hasBodyType(2)))),()) preference(1,(1,6),1,for(atom(hasBodyType(1))),()) preference(1,poset) output(4,better,10) output(9,better,5) output(7,better,6) output(5,better,1) output(6,better,8) output(3,better,4) output(10,worse,9) output(1,worse,7)
+Optimization: 2 2
+Answer: 6
+preference(1,(1,6),1,for(neg(atom(hasEngineCap(5)))),()) preference(1,(1,12),1,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,3),2,for(neg(atom(hasEngineCap(5)))),()) preference(1,(1,6),2,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,12),2,for(neg(atom(hasBodyType(2)))),()) preference(1,(1,3),1,for(atom(hasBodyType(1))),()) preference(1,(1,11),1,for(atom(hasFuelCons(2))),()) preference(1,(1,11),2,for(atom(hasBodyType(1))),()) preference(1,poset) output(4,better,10) output(9,better,5) output(7,better,6) output(1,better,7) output(5,better,1) output(6,better,8) output(3,better,4) output(10,worse,9)
+Optimization: 1 4
+*** Info : (asprin_vL): Sending shutdown signal...
+*** Info : (asprin_vL): Queueing signal...
+Traceback (most recent call last):
+  File "clingo/application.py", line 359, in _pyclingo_application_main
+  File "asprin_vL.py", line 598, in main
+  File "clingo/control.py", line 805, in solve
+  File "clingo/solving.py", line 527, in get
+  File "clingo/_internal.py", line 44, in _c_call
+  File "clingo/_internal.py", line 75, in _handle_error
+RuntimeError: solving stopped by signal
+*** ERROR: (asprin_vL): solving stopped by signal
+*** Info : (asprin_vL): Shutdown completed in 0.120 seconds
+SATISFIABLE
+
+INTERRUPTED  : 1
+Models       : 6+
+  Optimum    : unknown
+Optimization : 1 4
+Calls        : 1
+Time         : 298.190s (Solving: 289.25s 1st Model: 1.65s Unsat: 0.00s)
+CPU Time     : 1164.016s
+Threads      : 4        (Winner: 4)
+
+Choices      : 3337532  (Domain: 30)
+Conflicts    : 101209   (Analyzed: 101209)
+Restarts     : 154      (Average: 657.20 Last: 3394)
+Model-Level  : 353.7   
+Problems     : 4        (Average Length: 1.00 Splits: 0)
+Lemmas       : 3388760  (Deleted: 3268287)
+  Binary     : 1748     (Ratio:   0.05%)
+  Ternary    : 39280    (Ratio:   1.16%)
+  Conflict   : 101209   (Average Length: 3048.1 Ratio:   2.99%) 
+  Loop       : 3242385  (Average Length:  254.0 Ratio:  95.68%) 
+  Other      : 45166    (Average Length:    3.4 Ratio:   1.33%) 
+  Distributed: 15056    (Ratio:   0.45% Average LBD: 2.79) 
+  Integrated : 45166    (Ratio: 299.99% Unit: 115 Average Jumps: 1430.96)
+Backjumps    : 101209   (Average: 28.08 Max: 90762 Sum: 2842044)
+  Executed   : 101184   (Average: 28.08 Max: 90762 Sum: 2841995 Ratio: 100.00%)
+  Bounded    : 25       (Average:  1.96 Max:   2 Sum:     49 Ratio:   0.00%)
+
+Rules        : 1671187 
+  Choice     : 37      
+  Minimize   : 2       
+Atoms        : 18639   
+Bodies       : 1514096 
+  Count      : 48      
+Equivalences : 35863    (Atom=Atom: 5058 Body=Body: 9324 Other: 21481)
+Tight        : No       (SCCs: 9 Non-Hcfs: 0 Nodes: 1434510 Gammas: 0)
+Variables    : 1444425  (Eliminated:    0 Frozen: 1436973)
+Constraints  : 8591908  (Binary:  82.8% Ternary:   1.1% Other:  16.0%)
+
+No preference instances learned!
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasBodyType(1)) >> not atom(hasFuelCons(2))  
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasBodyType(1)) >> not atom(hasEngineCap(5))  
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  not atom(hasEngineCap(2))  >> not atom(hasBodyType(2))  
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasBodyType(1)) >> not atom(hasEngineCap(5))  ; 
+  not atom(hasEngineCap(1))  >> not atom(hasBodyType(2))  
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasBodyType(1)) >> not atom(hasEngineCap(5))  ; 
+  not atom(hasEngineCap(5))  >> not atom(hasEngineCap(1))  ; 
+  atom(hasFuelCons(2)) >> atom(hasBodyType(1)) ; 
+  not atom(hasEngineCap(1))  >> not atom(hasBodyType(2))  
+}.

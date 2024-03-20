@@ -1,0 +1,21 @@
+<runscript output="output">
+
+	<machine name="zuse" cpu="24x8xE5520@2.27GHz" memory="24GB"/>
+	
+	<config name="pbs-generic" template="templates/seq-generic.sh"/>
+	<system name="asprin-vL" version="1.0" measures="clasp" config="pbs-generic">
+		<setting name="default"  cmdline="--stats=1 --print_output_instances --min_element -t4" pbstemplate="templates/single.pbs"/>
+	</system>
+	
+	<pbsjob name="pbs-generic" timeout="300" runs="1" 
+		memory="4000" cpt="8" script_mode="timeout" walltime="00:20:01" partition="short"/>
+
+	<benchmark name="pbs-suite">
+		<folder path="benchmarks/clasp"/>
+	</benchmark>
+
+	<project name="asprin-vL" job="pbs-generic">
+		<runtag machine="zuse" benchmark="pbs-suite" tag="*all*"/>
+	</project>
+
+</runscript>

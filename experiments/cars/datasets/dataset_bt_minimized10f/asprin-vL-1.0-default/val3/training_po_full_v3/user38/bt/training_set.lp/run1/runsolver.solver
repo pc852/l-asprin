@@ -1,0 +1,105 @@
+asprin_vL version 1.0
+Reading from stdin
+-:102:1-16: info: no atoms over signature occur in program:
+  output/3
+
+-:91:25-35: info: atom does not occur in any rule head:
+  unc(P,M,N)
+
+-:94:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:95:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:96:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+Solving...
+Answer: 1
+preference(1,betterthan)
+Optimization: 8 0
+Answer: 2
+preference(1,betterthan) preference(1,(1,3),2,for(and(atom(hasEngineCap(2)),atom(hasTransmission(1)))),()) preference(1,(1,14),2,for(and(atom(hasEngineCap(2)),atom(hasFuelCons(2)))),()) preference(1,(1,16),2,for(atom(hasEngineCap(4))),()) preference(1,(1,17),2,for(and(atom(hasFuelCons(1)),atom(hasBodyType(1)))),()) preference(1,(1,18),2,for(and(atom(hasTransmission(1)),atom(hasEngineCap(5)))),()) preference(1,(1,19),2,for(and(atom(hasTransmission(2)),atom(hasEngineCap(3)))),()) preference(1,(1,20),2,for(and(atom(hasBodyType(2)),atom(hasEngineCap(1)))),()) preference(1,(1,3),1,for(and(atom(hasFuelCons(2)),atom(hasBodyType(1)))),()) preference(1,(1,14),1,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(3)))),()) preference(1,(1,16),1,for(and(atom(hasEngineCap(2)),atom(hasFuelCons(1)))),()) preference(1,(1,17),1,for(and(atom(hasFuelCons(1)),atom(hasEngineCap(1)))),()) preference(1,(1,18),1,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(1)))),()) preference(1,(1,19),1,for(atom(hasEngineCap(4))),()) preference(1,(1,20),1,for(and(atom(hasEngineCap(2)),atom(hasBodyType(2)))),()) output(7,better,2) output(2,better,10) output(9,better,5) output(1,better,4) output(8,better,7) output(10,better,9) output(5,better,1) output(6,better,8)
+Optimization: 0 7
+Progression : 0 [1;7] (Error: 6)
+Answer: 3
+preference(1,betterthan) preference(1,(1,3),2,for(and(atom(hasBodyType(2)),atom(hasEngineCap(1)))),()) preference(1,(1,4),2,for(and(atom(hasTransmission(2)),atom(hasEngineCap(4)))),()) preference(1,(1,15),2,for(atom(hasBodyType(1))),()) preference(1,(1,17),2,for(and(atom(hasTransmission(1)),atom(hasFuelCons(2)))),()) preference(1,(1,19),2,for(atom(hasFuelCons(2))),()) preference(1,(1,20),2,for(and(atom(hasEngineCap(2)),atom(hasBodyType(1)))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(2)),atom(hasBodyType(2)))),()) preference(1,(1,4),1,for(atom(hasEngineCap(2))),()) preference(1,(1,15),1,for(and(atom(hasBodyType(2)),atom(hasEngineCap(1)))),()) preference(1,(1,17),1,for(and(atom(hasTransmission(2)),atom(hasEngineCap(2)))),()) preference(1,(1,19),1,for(atom(hasEngineCap(4))),()) preference(1,(1,20),1,for(and(atom(hasTransmission(2)),atom(hasBodyType(2)))),()) output(7,better,2) output(2,better,10) output(9,better,5) output(1,better,4) output(8,better,7) output(10,better,9) output(5,better,1) output(6,better,8)
+Optimization: 0 6
+Progression : 0 [2;6] (Error: 2)
+Progression : 0 [3;6] (Error: 1)
+*** Info : (asprin_vL): Sending shutdown signal...
+*** Info : (asprin_vL): Queueing signal...
+Traceback (most recent call last):
+  File "clingo/application.py", line 359, in _pyclingo_application_main
+  File "asprin_vL.py", line 598, in main
+  File "clingo/control.py", line 805, in solve
+  File "clingo/solving.py", line 527, in get
+  File "clingo/_internal.py", line 44, in _c_call
+  File "clingo/_internal.py", line 75, in _handle_error
+RuntimeError: solving stopped by signal
+*** ERROR: (asprin_vL): solving stopped by signal
+*** Info : (asprin_vL): Shutdown completed in 0.102 seconds
+SATISFIABLE
+
+INTERRUPTED  : 1
+Models       : 3+
+  Optimum    : unknown
+Optimization : 0 6
+Calls        : 1
+Time         : 297.668s (Solving: 296.30s 1st Model: 0.02s Unsat: 0.00s)
+CPU Time     : 1186.270s
+Threads      : 4        (Winner: 4)
+
+Choices      : 38419267 (Domain: 36242)
+Conflicts    : 1912559  (Analyzed: 1912556)
+Restarts     : 2051     (Average: 932.50 Last: 175095)
+Model-Level  : 426.0   
+Problems     : 8        (Average Length: 0.50 Splits: 0)
+Lemmas       : 1920795  (Deleted: 1829386)
+  Binary     : 9239     (Ratio:   0.48%)
+  Ternary    : 137      (Ratio:   0.01%)
+  Conflict   : 1912556  (Average Length: 3198.9 Ratio:  99.57%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 8239     (Average Length:  138.2 Ratio:   0.43%) 
+  Distributed: 2748     (Ratio:   0.14% Average LBD: 2.20) 
+  Integrated : 8244     (Ratio: 300.00% Unit: 434 Average Jumps: 696.88)
+Backjumps    : 1912556  (Average: 15.09 Max: 9093 Sum: 28857860)
+  Executed   : 1912508  (Average: 15.09 Max: 9093 Sum: 28857758 Ratio: 100.00%)
+  Bounded    : 48       (Average:  2.12 Max:   3 Sum:    102 Ratio:   0.00%)
+
+Rules        : 228824  
+  Choice     : 4871    
+  Minimize   : 2       
+Atoms        : 36029   
+Bodies       : 103964  
+  Count      : 102     
+Equivalences : 96541    (Atom=Atom: 19419 Body=Body: 13560 Other: 63562)
+Tight        : Yes
+Variables    : 30971    (Eliminated:    0 Frozen: 16171)
+Constraints  : 169137   (Binary:  84.6% Ternary:  15.2% Other:   0.2%)
+
+No preference instances learned!
+
+Learned preference statement: 
+
+#preference(1,betterthan){
+  atom(hasFuelCons(2)) & atom(hasBodyType(1)) >> atom(hasEngineCap(2)) & atom(hasTransmission(1)) ; 
+  atom(hasFuelCons(2)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(2)) & atom(hasFuelCons(2)) ; 
+  atom(hasEngineCap(2)) & atom(hasFuelCons(1)) >> atom(hasEngineCap(4)) ; 
+  atom(hasFuelCons(1)) & atom(hasEngineCap(1)) >> atom(hasFuelCons(1)) & atom(hasBodyType(1)) ; 
+  atom(hasFuelCons(2)) & atom(hasEngineCap(1)) >> atom(hasTransmission(1)) & atom(hasEngineCap(5)) ; 
+  atom(hasEngineCap(4)) >> atom(hasTransmission(2)) & atom(hasEngineCap(3)) ; 
+  atom(hasEngineCap(2)) & atom(hasBodyType(2)) >> atom(hasBodyType(2)) & atom(hasEngineCap(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,betterthan){
+  atom(hasEngineCap(2)) & atom(hasBodyType(2)) >> atom(hasBodyType(2)) & atom(hasEngineCap(1)) ; 
+  atom(hasEngineCap(2)) >> atom(hasTransmission(2)) & atom(hasEngineCap(4)) ; 
+  atom(hasBodyType(2)) & atom(hasEngineCap(1)) >> atom(hasBodyType(1)) ; 
+  atom(hasTransmission(2)) & atom(hasEngineCap(2)) >> atom(hasTransmission(1)) & atom(hasFuelCons(2)) ; 
+  atom(hasEngineCap(4)) >> atom(hasFuelCons(2)) ; 
+  atom(hasTransmission(2)) & atom(hasBodyType(2)) >> atom(hasEngineCap(2)) & atom(hasBodyType(1)) 
+}.

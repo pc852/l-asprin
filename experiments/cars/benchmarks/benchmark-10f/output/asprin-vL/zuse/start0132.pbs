@@ -1,0 +1,26 @@
+#!/bin/bash
+#SBATCH --output=out.%j
+#SBATCH --error=err.%j
+#SBATCH --time=00:20:01        # walltime
+#SBATCH --cpus-per-task=8    # number of processor cores (i.e. tasks)
+#SBATCH --partition=short
+
+# Good Idea to stop operation on first error.
+set -e
+
+# Load environment modules for your application here.
+source ~/.bashrc
+
+# Run jobs
+jobs="results/pbs-suite/asprin-vL-1.0-default/val9/training_po_full_v9/user7/poset/training_set.lp/run1/start.sh
+results/pbs-suite/asprin-vL-1.0-default/val4/training_po_full_v4/user21/less_weight/training_set.lp/run1/start.sh
+"
+echo running jobs@$(hostname)...
+echo ""
+echo "jobs:" $jobs
+echo ""
+for i in $jobs
+do
+    echo "running " $i
+    $i
+done

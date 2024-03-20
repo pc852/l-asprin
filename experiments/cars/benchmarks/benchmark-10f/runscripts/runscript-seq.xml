@@ -1,0 +1,24 @@
+<runscript output="output">
+
+	<machine name="houat" cpu="N5030_CPU@1.10GHz" memory="tbd_GB"/>
+	
+	<config name="seq-generic" template="templates/seq-generic.sh"/>
+	<system name="asprin-vL" version="1.0" measures="clasp" config="seq-generic">
+		<!-- optionally allows for tagging settings -->
+		<setting name="default"  cmdline="--stats=1 --print_output_instances --min_element -t4"/>
+	</system>
+	
+	<seqjob name="seq-generic" timeout="300" runs="1" parallel="2"/>
+
+	<benchmark name="seq-suite">
+		<folder path="benchmarks/clasp">
+		<ignore prefix="validation_po"/>
+		</folder>
+	</benchmark>
+
+	<project name="clasp-big" job="seq-generic">
+		<runtag machine="houat" benchmark="seq-suite" tag="*all*"/>
+	</project>
+
+</runscript>
+

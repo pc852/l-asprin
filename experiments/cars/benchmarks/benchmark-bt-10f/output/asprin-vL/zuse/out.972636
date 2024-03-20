@@ -1,0 +1,6 @@
+running jobs@hpc-node10...
+
+jobs: results/pbs-suite/asprin-vL-1.0-default/val10/training_po_full_v10/user11/bt/training_set.lp/run1/start.sh results/pbs-suite/asprin-vL-1.0-default/val5/training_po_full_v5/user42/bt/training_set.lp/run1/start.sh
+
+running  results/pbs-suite/asprin-vL-1.0-default/val10/training_po_full_v10/user11/bt/training_set.lp/run1/start.sh
+running  results/pbs-suite/asprin-vL-1.0-default/val5/training_po_full_v5/user42/bt/training_set.lp/run1/start.sh

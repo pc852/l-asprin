@@ -1,0 +1,199 @@
+asprin_vL version 1.0
+Reading from stdin
+-:202:3-30: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#P4)
+
+-:227:3-31: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#X4)
+
+-:308:36-48: info: atom does not occur in any rule head:
+  _p_rule(#X0,#X1,#P2,#X3,#X4)
+
+-:582:34-45: info: atom does not occur in any rule head:
+  better(#X0,#P1,#X2,#X3)
+
+-:759:35-45: info: atom does not occur in any rule head:
+  _p_group(#X0,#P1,#X2,#X3)
+
+-:960:50-58: info: atom does not occur in any rule head:
+  _p_rel(#X0,#P1,#X2,#X3)
+
+-:964:46-59: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:964:61-75: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:970:23-37: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1069:74-85: info: atom does not occur in any rule head:
+  _p_edge(#X0,#X1,#P2,#X3,#X4)
+
+-:1095:64-75: info: atom does not occur in any rule head:
+  _p_edge(#X0,#P1,#X2,#X3,#X4)
+
+-:1215:35-48: info: atom does not occur in any rule head:
+  _p_lits(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1249:25-39: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1271:33-45: info: atom does not occur in any rule head:
+  _p_acyclic(#X0,#P1,#X2,#X3)
+
+-:119:1-16: info: no atoms over signature occur in program:
+  output/3
+
+-:111:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:112:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:113:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+-:114:25-36: info: atom does not occur in any rule head:
+  forbid_diff
+
+-:144:20-31: info: atom does not occur in any rule head:
+  _p_optimize(P,M_,N_)
+
+Solving...
+Answer: 1
+preference(1,(1,1),2,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),2,for(and(atom(hasEngineCap(5)),neg(atom(hasBodyType(1))))),()) preference(1,(1,3),2,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),2,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(3)))),()) preference(1,(1,1),1,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),1,for(and(atom(hasFuelCons(1)),neg(atom(hasTransmission(2))))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),1,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,1),3,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),3,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),3,for(and(atom(hasEngineCap(1)),atom(hasEngineCap(3)))),()) preference(1,(1,4),3,for(and(atom(hasFuelCons(2)),atom(hasFuelCons(1)))),()) preference(1,(1,1),4,for(and(atom(hasBodyType(2)),atom(hasEngineCap(4)))),()) preference(1,(1,2),4,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),4,for(and(atom(hasEngineCap(4)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,4),4,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(2)))),()) preference(1,aso) output(10,eq,8) output(9,eq,2) output(2,eq,7) output(7,eq,10) output(8,eq,4) output(4,eq,3) output(3,eq,5) output(5,eq,1)
+Optimization: 8 4
+Answer: 2
+preference(1,(1,1),2,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),2,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),2,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(1)))),()) preference(1,(1,4),2,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(3)))),()) preference(1,(1,1),1,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),1,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,1),3,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,2),3,for(and(atom(hasEngineCap(4)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,3),3,for(and(atom(hasEngineCap(5)),neg(atom(hasBodyType(1))))),()) preference(1,(1,4),3,for(and(atom(hasTransmission(2)),atom(hasTransmission(1)))),()) preference(1,(1,1),4,for(and(atom(hasEngineCap(1)),neg(atom(hasBodyType(2))))),()) preference(1,(1,2),4,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),4,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),4,for(and(atom(hasEngineCap(2)),neg(atom(hasEngineCap(5))))),()) preference(1,aso) output(2,better,7) output(3,better,5) output(9,worse,2) output(7,worse,10) output(5,worse,1) output(10,eq,8) output(8,eq,4) output(4,eq,3)
+Optimization: 6 4
+Answer: 3
+preference(1,(1,1),2,for(and(atom(hasEngineCap(3)),atom(hasEngineCap(2)))),()) preference(1,(1,2),2,for(and(atom(hasEngineCap(5)),neg(atom(hasBodyType(1))))),()) preference(1,(1,3),2,for(and(atom(hasEngineCap(5)),atom(hasTransmission(2)))),()) preference(1,(1,4),2,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(3)))),()) preference(1,(1,1),1,for(and(atom(hasBodyType(1)),atom(hasBodyType(2)))),()) preference(1,(1,2),1,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(3)))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(1)),atom(hasEngineCap(2)))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,1),3,for(and(atom(hasEngineCap(4)),neg(atom(hasBodyType(1))))),()) preference(1,(1,2),3,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(4)))),()) preference(1,(1,3),3,for(and(atom(hasEngineCap(5)),neg(atom(hasBodyType(1))))),()) preference(1,(1,4),3,for(and(atom(hasEngineCap(1)),atom(hasEngineCap(4)))),()) preference(1,(1,1),4,for(and(atom(hasEngineCap(1)),neg(atom(hasBodyType(2))))),()) preference(1,(1,2),4,for(and(atom(hasEngineCap(4)),atom(hasFuelCons(2)))),()) preference(1,(1,3),4,for(and(atom(hasTransmission(2)),atom(hasTransmission(1)))),()) preference(1,(1,4),4,for(and(atom(hasFuelCons(2)),neg(atom(hasEngineCap(2))))),()) preference(1,aso) output(7,better,10) output(8,better,4) output(5,better,1) output(10,worse,8) output(3,worse,5) output(9,eq,2) output(2,eq,7) output(4,eq,3)
+Optimization: 5 4
+Answer: 4
+preference(1,(1,1),0,for(and(atom(hasTransmission(1)),neg(atom(hasTransmission(2))))),()) preference(1,(1,4),0,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,1),2,for(and(atom(hasTransmission(2)),neg(atom(hasBodyType(1))))),()) preference(1,(1,2),2,for(and(atom(hasBodyType(2)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,3),2,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),2,for(and(atom(hasTransmission(1)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,1),1,for(and(atom(hasTransmission(2)),atom(hasEngineCap(4)))),()) preference(1,(1,2),1,for(and(atom(hasTransmission(1)),atom(hasBodyType(2)))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(3)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,1),3,for(and(atom(hasBodyType(2)),neg(atom(hasTransmission(1))))),()) preference(1,(1,2),3,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),3,for(and(atom(hasEngineCap(1)),atom(hasEngineCap(3)))),()) preference(1,(1,4),3,for(and(atom(hasBodyType(1)),atom(hasEngineCap(4)))),()) preference(1,(1,1),4,for(and(atom(hasBodyType(1)),atom(hasEngineCap(4)))),()) preference(1,(1,2),4,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),4,for(and(atom(hasEngineCap(4)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,4),4,for(and(atom(hasBodyType(2)),neg(atom(hasFuelCons(2))))),()) preference(1,aso) output(9,better,2) output(7,better,10) output(8,better,4) output(3,better,5) output(10,worse,8) output(2,worse,7) output(4,worse,3) output(5,worse,1)
+Optimization: 4 4
+Answer: 5
+preference(1,(1,1),0,for(and(atom(hasTransmission(1)),neg(atom(hasTransmission(2))))),()) preference(1,(1,4),0,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,3),4,for(neg(atom(hasEngineCap(2)))),()) preference(1,(1,1),2,for(and(atom(hasTransmission(2)),neg(atom(hasBodyType(1))))),()) preference(1,(1,2),2,for(and(atom(hasBodyType(2)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,3),2,for(and(atom(hasEngineCap(3)),atom(hasBodyType(2)))),()) preference(1,(1,4),2,for(and(atom(hasTransmission(1)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,1),1,for(and(atom(hasTransmission(2)),atom(hasEngineCap(4)))),()) preference(1,(1,2),1,for(and(atom(hasFuelCons(2)),atom(hasBodyType(2)))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(3)),neg(atom(hasTransmission(2))))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(3)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,1),3,for(and(atom(hasBodyType(2)),neg(atom(hasTransmission(1))))),()) preference(1,(1,2),3,for(and(atom(hasEngineCap(3)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,3),3,for(and(atom(hasBodyType(1)),neg(atom(hasEngineCap(5))))),()) preference(1,(1,4),3,for(and(atom(hasBodyType(1)),atom(hasEngineCap(4)))),()) preference(1,(1,1),4,for(and(atom(hasBodyType(1)),atom(hasEngineCap(4)))),()) preference(1,(1,2),4,for(and(atom(hasEngineCap(5)),neg(atom(hasFuelCons(2))))),()) preference(1,(1,4),4,for(and(atom(hasFuelCons(1)),neg(atom(hasEngineCap(3))))),()) preference(1,aso) output(10,better,8) output(9,better,2) output(2,better,7) output(8,better,4) output(3,better,5) output(7,worse,10) output(4,worse,3)
+Optimization: 3 4
+Answer: 6
+preference(1,(1,2),0,for(and(atom(hasTransmission(1)),neg(atom(hasEngineCap(5))))),()) preference(1,(1,3),0,for(neg(atom(hasTransmission(1)))),()) preference(1,(1,2),2,for(neg(atom(hasTransmission(1)))),()) preference(1,(1,3),2,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,2),3,for(neg(atom(hasEngineCap(3)))),()) preference(1,(1,4),4,for(neg(atom(hasEngineCap(4)))),()) preference(1,(1,3),1,for(atom(hasFuelCons(2))),()) preference(1,(1,4),3,for(atom(hasEngineCap(5))),()) preference(1,(1,4),2,for(and(atom(hasTransmission(2)),neg(atom(hasEngineCap(2))))),()) preference(1,(1,2),1,for(and(atom(hasBodyType(2)),neg(atom(hasEngineCap(2))))),()) preference(1,(1,4),1,for(and(atom(hasFuelCons(2)),atom(hasTransmission(2)))),()) preference(1,aso) output(10,better,8) output(9,better,2) output(2,better,7) output(8,better,4) output(4,better,3) output(3,better,5) output(7,worse,10) output(5,worse,1)
+Optimization: 2 3
+Answer: 7
+preference(1,(1,1),0,for(and(atom(hasTransmission(1)),neg(atom(hasTransmission(2))))),()) preference(1,(1,2),0,for(neg(atom(hasEngineCap(4)))),()) preference(1,(1,3),0,for(and(atom(hasBodyType(1)),atom(hasEngineCap(3)))),()) preference(1,(1,4),0,for(neg(atom(hasEngineCap(1)))),()) preference(1,(1,2),2,for(neg(atom(hasFuelCons(2)))),()) preference(1,(1,3),4,for(neg(atom(hasEngineCap(2)))),()) preference(1,(1,1),2,for(and(atom(hasEngineCap(3)),atom(hasTransmission(1)))),()) preference(1,(1,3),2,for(and(atom(hasEngineCap(3)),atom(hasBodyType(2)))),()) preference(1,(1,4),2,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(4)))),()) preference(1,(1,1),1,for(and(atom(hasBodyType(2)),atom(hasTransmission(2)))),()) preference(1,(1,2),1,for(and(atom(hasTransmission(2)),atom(hasEngineCap(3)))),()) preference(1,(1,3),1,for(and(atom(hasEngineCap(3)),neg(atom(hasTransmission(2))))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(3)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,1),3,for(and(atom(hasEngineCap(2)),atom(hasTransmission(1)))),()) preference(1,(1,2),3,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(1))))),()) preference(1,(1,3),3,for(and(atom(hasBodyType(1)),neg(atom(hasEngineCap(5))))),()) preference(1,(1,4),3,for(and(atom(hasEngineCap(4)),atom(hasEngineCap(3)))),()) preference(1,(1,1),4,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(1)))),()) preference(1,(1,2),4,for(and(atom(hasFuelCons(2)),atom(hasBodyType(2)))),()) preference(1,(1,4),4,for(and(atom(hasFuelCons(1)),neg(atom(hasEngineCap(3))))),()) preference(1,aso) output(10,better,8) output(9,better,2) output(2,better,7) output(8,better,4) output(4,better,3) output(3,better,5) output(5,better,1) output(7,worse,10)
+Optimization: 1 4
+Answer: 8
+preference(1,(1,1),0,for(neg(atom(hasEngineCap(4)))),()) preference(1,(1,3),0,for(and(atom(hasTransmission(1)),atom(hasFuelCons(2)))),()) preference(1,(1,3),4,for(neg(atom(hasEngineCap(4)))),()) preference(1,(1,3),1,for(atom(hasEngineCap(5))),()) preference(1,(1,4),4,for(atom(hasTransmission(1))),()) preference(1,(1,1),2,for(and(atom(hasFuelCons(1)),atom(hasTransmission(2)))),()) preference(1,(1,2),2,for(and(atom(hasFuelCons(1)),atom(hasEngineCap(2)))),()) preference(1,(1,3),2,for(and(atom(hasEngineCap(3)),atom(hasBodyType(1)))),()) preference(1,(1,4),2,for(and(atom(hasFuelCons(1)),atom(hasBodyType(1)))),()) preference(1,(1,1),1,for(and(atom(hasEngineCap(2)),neg(atom(hasTransmission(1))))),()) preference(1,(1,2),1,for(and(atom(hasEngineCap(4)),neg(atom(hasTransmission(1))))),()) preference(1,(1,4),1,for(and(atom(hasEngineCap(2)),atom(hasEngineCap(3)))),()) preference(1,(1,1),3,for(and(atom(hasTransmission(1)),neg(atom(hasTransmission(2))))),()) preference(1,(1,2),3,for(and(atom(hasTransmission(2)),neg(atom(hasBodyType(1))))),()) preference(1,(1,3),3,for(and(atom(hasTransmission(1)),neg(atom(hasEngineCap(1))))),()) preference(1,(1,4),3,for(and(atom(hasTransmission(2)),neg(atom(hasBodyType(1))))),()) preference(1,(1,1),4,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(1)))),()) preference(1,(1,2),4,for(and(atom(hasTransmission(1)),neg(atom(hasFuelCons(1))))),()) preference(1,aso) output(10,better,8) output(9,better,2) output(2,better,7) output(7,better,10) output(8,better,4) output(4,better,3) output(3,better,5) output(5,better,1)
+Optimization: 0 4
+Progression : 0 [1;4] (Error: 3)
+Progression : 0 [2;4] (Error: 1)
+Progression : 0 [3;4] (Error: 0.333333)
+OPTIMUM FOUND
+
+Models       : 8
+  Optimum    : yes
+Optimization : 0 4
+Calls        : 1
+Time         : 48.987s (Solving: 36.95s 1st Model: 0.62s Unsat: 25.64s)
+CPU Time     : 159.309s
+Threads      : 4        (Winner: 1)
+
+Choices      : 622762   (Domain: 27)
+Conflicts    : 54454    (Analyzed: 54449)
+Restarts     : 103      (Average: 528.63 Last: 2404)
+Model-Level  : 2541.2  
+Problems     : 9        (Average Length: 0.44 Splits: 0)
+Lemmas       : 91686    (Deleted: 27353)
+  Binary     : 2262     (Ratio:   2.47%)
+  Ternary    : 3995     (Ratio:   4.36%)
+  Conflict   : 54447    (Average Length:  580.3 Ratio:  59.38%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 37239    (Average Length:  234.4 Ratio:  40.62%) 
+  Distributed: 13031    (Ratio:  23.93% Average LBD: 3.28) 
+  Integrated : 39093    (Ratio: 300.00% Unit: 560 Average Jumps: 71.76)
+Backjumps    : 54449    (Average:  9.50 Max: 3079 Sum: 517121)
+  Executed   : 54444    (Average:  9.50 Max: 3079 Sum: 517102 Ratio: 100.00%)
+  Bounded    : 5        (Average:  3.80 Max:   7 Sum:     19 Ratio:   0.00%)
+
+Rules        : 5425252 
+  Choice     : 21      
+  Minimize   : 2       
+Atoms        : 357862  
+Bodies       : 977811  
+  Count      : 212     
+Equivalences : 1082009  (Atom=Atom: 315314 Body=Body: 315960 Other: 450735)
+Tight        : Yes
+Variables    : 616683   (Eliminated:    0 Frozen: 33399)
+Constraints  : 6860653  (Binary:  91.1% Ternary:   8.9% Other:   0.0%)
+
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasBodyType(2)) & atom(hasEngineCap(4)) ; 
+  atom(hasFuelCons(1)) & not atom(hasTransmission(2))  >> atom(hasEngineCap(5)) & not atom(hasBodyType(1))  >> atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  ; 
+  atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(1)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(4)) & not atom(hasFuelCons(1))  ; 
+  atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(4)) & atom(hasEngineCap(3)) >> atom(hasFuelCons(2)) & atom(hasFuelCons(1)) >> atom(hasEngineCap(4)) & atom(hasEngineCap(2)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(1)) & not atom(hasBodyType(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(4)) & not atom(hasFuelCons(1))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(4)) & atom(hasEngineCap(1)) >> atom(hasEngineCap(5)) & not atom(hasBodyType(1))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(4)) & atom(hasEngineCap(3)) >> atom(hasTransmission(2)) & atom(hasTransmission(1)) >> atom(hasEngineCap(2)) & not atom(hasEngineCap(5))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasBodyType(1)) & atom(hasBodyType(2)) >> atom(hasEngineCap(3)) & atom(hasEngineCap(2)) >> atom(hasEngineCap(4)) & not atom(hasBodyType(1))  >> atom(hasEngineCap(1)) & not atom(hasBodyType(2))  ; 
+  atom(hasEngineCap(4)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(5)) & not atom(hasBodyType(1))  >> atom(hasFuelCons(2)) & atom(hasEngineCap(4)) >> atom(hasEngineCap(4)) & atom(hasFuelCons(2)) ; 
+  atom(hasEngineCap(1)) & atom(hasEngineCap(2)) >> atom(hasEngineCap(5)) & atom(hasTransmission(2)) >> atom(hasEngineCap(5)) & not atom(hasBodyType(1))  >> atom(hasTransmission(2)) & atom(hasTransmission(1)) ; 
+  atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(4)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(1)) & atom(hasEngineCap(4)) >> atom(hasFuelCons(2)) & not atom(hasEngineCap(2))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasTransmission(2)) & atom(hasEngineCap(4)) >> atom(hasTransmission(2)) & not atom(hasBodyType(1))  >> atom(hasBodyType(2)) & not atom(hasTransmission(1))  >> atom(hasBodyType(1)) & atom(hasEngineCap(4)) || atom(hasTransmission(1)) & not atom(hasTransmission(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasEngineCap(1))  >> atom(hasTransmission(1)) & not atom(hasEngineCap(1))  >> atom(hasBodyType(1)) & atom(hasEngineCap(4)) >> atom(hasBodyType(2)) & not atom(hasFuelCons(2))  || not atom(hasEngineCap(1))  ; 
+  atom(hasTransmission(1)) & atom(hasBodyType(2)) >> atom(hasBodyType(2)) & not atom(hasFuelCons(1))  >> atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  ; 
+  atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(1)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(4)) & not atom(hasFuelCons(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasTransmission(2)) & atom(hasEngineCap(4)) >> atom(hasTransmission(2)) & not atom(hasBodyType(1))  >> atom(hasBodyType(2)) & not atom(hasTransmission(1))  >> atom(hasBodyType(1)) & atom(hasEngineCap(4)) || atom(hasTransmission(1)) & not atom(hasTransmission(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasEngineCap(1))  >> atom(hasTransmission(1)) & not atom(hasEngineCap(1))  >> atom(hasBodyType(1)) & atom(hasEngineCap(4)) >> atom(hasFuelCons(1)) & not atom(hasEngineCap(3))  || not atom(hasEngineCap(1))  ; 
+  atom(hasFuelCons(2)) & atom(hasBodyType(2)) >> atom(hasBodyType(2)) & not atom(hasFuelCons(1))  >> atom(hasEngineCap(3)) & not atom(hasFuelCons(2))  >> atom(hasEngineCap(5)) & not atom(hasFuelCons(2))  ; 
+  atom(hasEngineCap(3)) & not atom(hasTransmission(2))  >> atom(hasEngineCap(3)) & atom(hasBodyType(2)) >> atom(hasBodyType(1)) & not atom(hasEngineCap(5))  >> not atom(hasEngineCap(2))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasBodyType(2)) & not atom(hasEngineCap(2))  >> not atom(hasTransmission(1))  >> not atom(hasEngineCap(3))  || atom(hasTransmission(1)) & not atom(hasEngineCap(5))  ; 
+  atom(hasFuelCons(2)) >> not atom(hasEngineCap(1))  || not atom(hasTransmission(1))  ; 
+  atom(hasFuelCons(2)) & atom(hasTransmission(2)) >> atom(hasTransmission(2)) & not atom(hasEngineCap(2))  >> atom(hasEngineCap(5)) >> not atom(hasEngineCap(4))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasBodyType(2)) & atom(hasTransmission(2)) >> atom(hasEngineCap(3)) & atom(hasTransmission(1)) >> atom(hasEngineCap(2)) & atom(hasTransmission(1)) >> atom(hasFuelCons(2)) & atom(hasEngineCap(1)) || atom(hasTransmission(1)) & not atom(hasTransmission(2))  ; 
+  atom(hasTransmission(2)) & atom(hasEngineCap(3)) >> not atom(hasFuelCons(2))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(1))  >> atom(hasFuelCons(2)) & atom(hasBodyType(2)) || not atom(hasEngineCap(4))  ; 
+  atom(hasEngineCap(3)) & not atom(hasTransmission(2))  >> atom(hasEngineCap(3)) & atom(hasBodyType(2)) >> atom(hasBodyType(1)) & not atom(hasEngineCap(5))  >> not atom(hasEngineCap(2))  || atom(hasBodyType(1)) & atom(hasEngineCap(3)) ; 
+  atom(hasEngineCap(3)) & not atom(hasEngineCap(1))  >> atom(hasFuelCons(2)) & atom(hasEngineCap(4)) >> atom(hasEngineCap(4)) & atom(hasEngineCap(3)) >> atom(hasFuelCons(1)) & not atom(hasEngineCap(3))  || not atom(hasEngineCap(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasEngineCap(2)) & not atom(hasTransmission(1))  >> atom(hasFuelCons(1)) & atom(hasTransmission(2)) >> atom(hasTransmission(1)) & not atom(hasTransmission(2))  >> atom(hasFuelCons(2)) & atom(hasEngineCap(1)) || not atom(hasEngineCap(4))  ; 
+  atom(hasEngineCap(5)) >> atom(hasEngineCap(3)) & atom(hasBodyType(1)) >> atom(hasTransmission(1)) & not atom(hasEngineCap(1))  >> not atom(hasEngineCap(4))  || atom(hasTransmission(1)) & atom(hasFuelCons(2)) ; 
+  atom(hasEngineCap(4)) & not atom(hasTransmission(1))  >> atom(hasFuelCons(1)) & atom(hasEngineCap(2)) >> atom(hasTransmission(2)) & not atom(hasBodyType(1))  >> atom(hasTransmission(1)) & not atom(hasFuelCons(1))  ; 
+  atom(hasEngineCap(2)) & atom(hasEngineCap(3)) >> atom(hasFuelCons(1)) & atom(hasBodyType(1)) >> atom(hasTransmission(2)) & not atom(hasBodyType(1))  >> atom(hasTransmission(1)) 
+}.

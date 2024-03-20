@@ -1,0 +1,92 @@
+asprin_vL version 1.0
+Reading from stdin
+-:102:1-16: info: no atoms over signature occur in program:
+  output/3
+
+-:91:25-35: info: atom does not occur in any rule head:
+  unc(P,M,N)
+
+-:94:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:95:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:96:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+Solving...
+Answer: 1
+preference(1,betterthan)
+Optimization: 8 0
+Answer: 2
+preference(1,betterthan) preference(1,(1,1),2,for(and(atom(hasTransmission(1)),atom(hasEngineCap(3)))),()) preference(1,(1,2),2,for(and(atom(hasEngineCap(2)),atom(hasBodyType(2)))),()) preference(1,(1,9),2,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(5)))),()) preference(1,(1,12),2,for(and(atom(hasFuelCons(1)),atom(hasEngineCap(4)))),()) preference(1,(1,14),2,for(and(atom(hasEngineCap(2)),atom(hasFuelCons(1)))),()) preference(1,(1,18),2,for(and(atom(hasTransmission(2)),atom(hasEngineCap(3)))),()) preference(1,(1,19),2,for(and(atom(hasEngineCap(2)),atom(hasFuelCons(2)))),()) preference(1,(1,20),2,for(and(atom(hasFuelCons(2)),atom(hasEngineCap(1)))),()) preference(1,(1,1),1,for(and(atom(hasEngineCap(2)),atom(hasBodyType(2)))),()) preference(1,(1,2),1,for(and(atom(hasTransmission(1)),atom(hasEngineCap(1)))),()) preference(1,(1,9),1,for(and(atom(hasTransmission(1)),atom(hasEngineCap(3)))),()) preference(1,(1,12),1,for(and(atom(hasEngineCap(2)),atom(hasFuelCons(1)))),()) preference(1,(1,14),1,for(and(atom(hasTransmission(2)),atom(hasEngineCap(3)))),()) preference(1,(1,18),1,for(and(atom(hasBodyType(2)),atom(hasFuelCons(1)))),()) preference(1,(1,19),1,for(and(atom(hasFuelCons(1)),atom(hasEngineCap(4)))),()) preference(1,(1,20),1,for(and(atom(hasFuelCons(2)),atom(hasBodyType(1)))),()) output(2,better,9) output(3,better,4) output(7,better,2) output(9,better,1) output(5,better,3) output(10,better,7) output(1,better,5) output(8,better,10)
+Optimization: 0 8
+Progression : 0 [1;8] (Error: 7)
+Progression : 0 [2;8] (Error: 3)
+Progression : 0 [3;8] (Error: 1.66667)
+*** Info : (asprin_vL): Sending shutdown signal...
+*** Info : (asprin_vL): Queueing signal...
+Traceback (most recent call last):
+  File "clingo/application.py", line 359, in _pyclingo_application_main
+  File "asprin_vL.py", line 598, in main
+  File "clingo/control.py", line 805, in solve
+  File "clingo/solving.py", line 527, in get
+  File "clingo/_internal.py", line 44, in _c_call
+  File "clingo/_internal.py", line 75, in _handle_error
+RuntimeError: solving stopped by signal
+*** ERROR: (asprin_vL): solving stopped by signal
+*** Info : (asprin_vL): Shutdown completed in 0.078 seconds
+SATISFIABLE
+
+INTERRUPTED  : 1
+Models       : 2+
+  Optimum    : unknown
+Optimization : 0 8
+Calls        : 1
+Time         : 297.799s (Solving: 296.40s 1st Model: 0.02s Unsat: 0.00s)
+CPU Time     : 1186.560s
+Threads      : 4        (Winner: 4)
+
+Choices      : 37724525 (Domain: 29148)
+Conflicts    : 2047687  (Analyzed: 2047684)
+Restarts     : 2542     (Average: 805.54 Last: 152434)
+Model-Level  : 1155.5  
+Problems     : 8        (Average Length: 0.50 Splits: 0)
+Lemmas       : 2057421  (Deleted: 1988954)
+  Binary     : 9673     (Ratio:   0.47%)
+  Ternary    : 182      (Ratio:   0.01%)
+  Conflict   : 2047684  (Average Length: 3236.1 Ratio:  99.53%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 9737     (Average Length:  120.5 Ratio:   0.47%) 
+  Distributed: 3263     (Ratio:   0.16% Average LBD: 2.35) 
+  Integrated : 9789     (Ratio: 300.00% Unit: 624 Average Jumps: 641.22)
+Backjumps    : 2047684  (Average: 12.53 Max: 9465 Sum: 25649841)
+  Executed   : 2047634  (Average: 12.53 Max: 9465 Sum: 25649747 Ratio: 100.00%)
+  Bounded    : 50       (Average:  1.88 Max:   3 Sum:     94 Ratio:   0.00%)
+
+Rules        : 228824  
+  Choice     : 4871    
+  Minimize   : 2       
+Atoms        : 36029   
+Bodies       : 106164  
+  Count      : 102     
+Equivalences : 96621    (Atom=Atom: 19419 Body=Body: 13640 Other: 63562)
+Tight        : Yes
+Variables    : 30611    (Eliminated:    0 Frozen: 16171)
+Constraints  : 169917   (Binary:  84.9% Ternary:  14.9% Other:   0.2%)
+
+No preference instances learned!
+
+Learned preference statement: 
+
+#preference(1,betterthan){
+  atom(hasEngineCap(2)) & atom(hasBodyType(2)) >> atom(hasTransmission(1)) & atom(hasEngineCap(3)) ; 
+  atom(hasTransmission(1)) & atom(hasEngineCap(1)) >> atom(hasEngineCap(2)) & atom(hasBodyType(2)) ; 
+  atom(hasTransmission(1)) & atom(hasEngineCap(3)) >> atom(hasFuelCons(2)) & atom(hasEngineCap(5)) ; 
+  atom(hasEngineCap(2)) & atom(hasFuelCons(1)) >> atom(hasFuelCons(1)) & atom(hasEngineCap(4)) ; 
+  atom(hasTransmission(2)) & atom(hasEngineCap(3)) >> atom(hasEngineCap(2)) & atom(hasFuelCons(1)) ; 
+  atom(hasBodyType(2)) & atom(hasFuelCons(1)) >> atom(hasTransmission(2)) & atom(hasEngineCap(3)) ; 
+  atom(hasFuelCons(1)) & atom(hasEngineCap(4)) >> atom(hasEngineCap(2)) & atom(hasFuelCons(2)) ; 
+  atom(hasFuelCons(2)) & atom(hasBodyType(1)) >> atom(hasFuelCons(2)) & atom(hasEngineCap(1)) 
+}.
