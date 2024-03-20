@@ -1,0 +1,184 @@
+asprin_vL version 1.0
+Reading from stdin
+-:254:3-30: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#P4)
+
+-:264:3-24: info: atom does not occur in any rule head:
+  preference(#X0,#P1,0,#P2,#P3)
+
+-:279:3-31: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#X4)
+
+-:360:36-48: info: atom does not occur in any rule head:
+  _p_rule(#X0,#X1,#P2,#X3,#X4)
+
+-:634:34-45: info: atom does not occur in any rule head:
+  better(#X0,#P1,#X2,#X3)
+
+-:811:35-45: info: atom does not occur in any rule head:
+  _p_group(#X0,#P1,#X2,#X3)
+
+-:940:38-65: info: atom does not occur in any rule head:
+  preference(#X0,#X1,0,for(#X2),#P3)
+
+-:1012:50-58: info: atom does not occur in any rule head:
+  _p_rel(#X0,#P1,#X2,#X3)
+
+-:1016:46-59: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:1016:61-75: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:1022:23-37: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1121:74-85: info: atom does not occur in any rule head:
+  _p_edge(#X0,#X1,#P2,#X3,#X4)
+
+-:1147:64-75: info: atom does not occur in any rule head:
+  _p_edge(#X0,#P1,#X2,#X3,#X4)
+
+-:1267:35-48: info: atom does not occur in any rule head:
+  _p_lits(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1301:25-39: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1323:33-45: info: atom does not occur in any rule head:
+  _p_acyclic(#X0,#P1,#X2,#X3)
+
+-:164:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:165:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:166:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+-:167:25-36: info: atom does not occur in any rule head:
+  forbid_diff
+
+Solving...
+Answer: 1
+preference(1,poset)
+Optimization: 36 0
+Answer: 2
+preference(1,(1,6),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,6),2,for(atom(hasPrice(1))),()) preference(1,poset)
+Optimization: 28 1
+Answer: 3
+preference(1,(1,6),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,6),2,for(atom(hasPrice(0))),()) preference(1,poset)
+Optimization: 22 1
+Answer: 4
+preference(1,(1,6),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,12),1,for(atom(hasPrice(0))),()) preference(1,(1,6),2,for(atom(hasMinorGrp(2))),()) preference(1,(1,12),2,for(atom(hasStyle(0))),()) preference(1,poset)
+Optimization: 20 2
+Answer: 5
+preference(1,(1,12),1,for(atom(hasPrice(0))),()) preference(1,(1,12),2,for(atom(hasMinorGrp(0))),()) preference(1,poset)
+Optimization: 17 1
+Answer: 6
+preference(1,(1,12),1,for(atom(hasPrice(0))),()) preference(1,(1,12),2,for(atom(isTuna(1))),()) preference(1,poset)
+Optimization: 15 1
+Answer: 7
+preference(1,(1,6),1,for(atom(hasPrice(0))),()) preference(1,(1,12),1,for(atom(hasMinorGrp(2))),()) preference(1,(1,6),2,for(atom(isTuna(1))),()) preference(1,(1,12),2,for(atom(hasStyle(0))),()) preference(1,poset)
+Optimization: 14 2
+Answer: 8
+preference(1,(1,6),1,for(atom(hasPrice(0))),()) preference(1,(1,12),1,for(atom(hasMinorGrp(2))),()) preference(1,(1,6),2,for(atom(hasMinorGrp(2))),()) preference(1,(1,12),2,for(atom(isTuna(1))),()) preference(1,poset)
+Optimization: 12 2
+*** Info : (asprin_vL): Sending shutdown signal...
+*** Info : (asprin_vL): Queueing signal...
+Traceback (most recent call last):
+  File "clingo/application.py", line 359, in _pyclingo_application_main
+  File "asprin_vL.py", line 598, in main
+  File "clingo/control.py", line 805, in solve
+  File "clingo/solving.py", line 527, in get
+  File "clingo/_internal.py", line 44, in _c_call
+  File "clingo/_internal.py", line 75, in _handle_error
+RuntimeError: solving stopped by signal
+*** ERROR: (asprin_vL): solving stopped by signal
+*** Info : (asprin_vL): Shutdown completed in 0.035 seconds
+SATISFIABLE
+
+INTERRUPTED  : 1
+Models       : 8+
+  Optimum    : unknown
+Optimization : 12 2
+Calls        : 1
+Time         : 597.156s (Solving: 588.63s 1st Model: 1.49s Unsat: 0.00s)
+CPU Time     : 2361.810s
+Threads      : 4        (Winner: 4)
+
+Choices      : 7137671  (Domain: 1996)
+Conflicts    : 157607   (Analyzed: 157607)
+Restarts     : 199      (Average: 791.99 Last: 8007)
+Model-Level  : 282.4   
+Problems     : 4        (Average Length: 1.00 Splits: 0)
+Lemmas       : 21385556 (Deleted: 21235583)
+  Binary     : 1336     (Ratio:   0.01%)
+  Ternary    : 42516    (Ratio:   0.20%)
+  Conflict   : 157607   (Average Length: 1078.8 Ratio:   0.74%) 
+  Loop       : 21184431 (Average Length:  331.5 Ratio:  99.06%) 
+  Other      : 43518    (Average Length:    3.9 Ratio:   0.20%) 
+  Distributed: 14514    (Ratio:   0.07% Average LBD: 2.81) 
+  Integrated : 43542    (Ratio: 300.00% Unit: 109 Average Jumps: 6495.13)
+Backjumps    : 157607   (Average: 37.43 Max: 107404 Sum: 5898738)
+  Executed   : 157583   (Average: 37.43 Max: 107404 Sum: 5898661 Ratio: 100.00%)
+  Bounded    : 24       (Average:  3.21 Max:  38 Sum:     77 Ratio:   0.00%)
+
+Rules        : 1739036 
+  Choice     : 37      
+  Minimize   : 2       
+Atoms        : 31760   
+Bodies       : 1338103 
+  Count      : 48      
+Equivalences : 36516    (Atom=Atom: 5833 Body=Body: 8964 Other: 21719)
+Tight        : No       (SCCs: 37 Non-Hcfs: 0 Nodes: 1274900 Gammas: 0)
+Variables    : 1290150  (Eliminated:    0 Frozen: 1278451)
+Constraints  : 7504222  (Binary:  82.5% Ternary:   3.6% Other:  13.9%)
+
+No preference instances learned!
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasMinorGrp(1)) >> atom(hasPrice(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasMinorGrp(1)) >> atom(hasPrice(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasMinorGrp(1)) >> atom(hasMinorGrp(2)) ; 
+  atom(hasPrice(0)) >> atom(hasStyle(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasPrice(0)) >> atom(hasMinorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasPrice(0)) >> atom(isTuna(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasPrice(0)) >> atom(isTuna(1)) ; 
+  atom(hasMinorGrp(2)) >> atom(hasStyle(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,poset){
+  atom(hasPrice(0)) >> atom(hasMinorGrp(2)) ; 
+  atom(hasMinorGrp(2)) >> atom(isTuna(1)) 
+}.

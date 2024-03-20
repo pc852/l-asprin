@@ -1,0 +1,425 @@
+asprin_vL version 1.0
+Reading from stdin
+-:279:3-30: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#P4)
+
+-:304:3-31: info: atom does not occur in any rule head:
+  preference(#X0,#P1,#P2,name(#X3),#X4)
+
+-:385:36-48: info: atom does not occur in any rule head:
+  _p_rule(#X0,#X1,#P2,#X3,#X4)
+
+-:659:34-45: info: atom does not occur in any rule head:
+  better(#X0,#P1,#X2,#X3)
+
+-:836:35-45: info: atom does not occur in any rule head:
+  _p_group(#X0,#P1,#X2,#X3)
+
+-:1037:50-58: info: atom does not occur in any rule head:
+  _p_rel(#X0,#P1,#X2,#X3)
+
+-:1041:46-59: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:1041:61-75: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#X2,#P3,#X4,#X5)
+
+-:1047:23-37: info: atom does not occur in any rule head:
+  _p_post(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1146:74-85: info: atom does not occur in any rule head:
+  _p_edge(#X0,#X1,#P2,#X3,#X4)
+
+-:1172:64-75: info: atom does not occur in any rule head:
+  _p_edge(#X0,#P1,#X2,#X3,#X4)
+
+-:1292:35-48: info: atom does not occur in any rule head:
+  _p_lits(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1326:25-39: info: atom does not occur in any rule head:
+  _p_pre(#X0,#X1,#P2,#P3,#X4,#X5)
+
+-:1348:33-45: info: atom does not occur in any rule head:
+  _p_acyclic(#X0,#P1,#X2,#X3)
+
+-:189:25-37: info: atom does not occur in any rule head:
+  forbid_worse
+
+-:190:25-37: info: atom does not occur in any rule head:
+  forbid_equal
+
+-:191:25-35: info: atom does not occur in any rule head:
+  forbid_unc
+
+-:192:25-36: info: atom does not occur in any rule head:
+  forbid_diff
+
+-:221:20-31: info: atom does not occur in any rule head:
+  _p_optimize(P,M_,N_)
+
+-:258:20-56: info: atom does not occur in any rule head:
+  _p_error_type(T,ordering_min_length(N),M_,N_)
+
+Solving...
+Answer: 1
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(1)))),()) preference(1,(1,4),3,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(isPale(1))),()) preference(1,aso)
+Optimization: 30 4
+Answer: 2
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(1)))),()) preference(1,(1,4),3,for(neg(atom(hasStyle(0)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(isPale(1))),()) preference(1,aso)
+Optimization: 29 4
+Answer: 3
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,4),3,for(neg(atom(isVeg(1)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(isPale(1))),()) preference(1,aso)
+Optimization: 24 4
+Answer: 4
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,4),3,for(neg(atom(hasStyle(0)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(isPale(1))),()) preference(1,aso)
+Optimization: 23 4
+Answer: 5
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),3,for(neg(atom(isSpecial(1)))),()) preference(1,(1,4),3,for(neg(atom(hasStyle(0)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(isPale(1))),()) preference(1,aso)
+Optimization: 22 4
+Answer: 6
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,2),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,3),3,for(neg(atom(hasStyle(1)))),()) preference(1,(1,4),3,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 21 4
+Answer: 7
+preference(1,(1,1),0,for(atom(hasPrice(1))),()) preference(1,(1,1),1,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,1),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,2),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,3),3,for(neg(atom(isSpecial(1)))),()) preference(1,(1,4),3,for(neg(atom(hasStyle(0)))),()) preference(1,(1,1),4,for(neg(atom(isTuna(1)))),()) preference(1,(1,2),4,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isLight(1)))),()) preference(1,(1,4),4,for(neg(atom(isSpecial(1)))),()) preference(1,(1,2),1,for(atom(hasPrice(1))),()) preference(1,(1,3),1,for(atom(hasPrice(1))),()) preference(1,(1,4),1,for(atom(isFattyFish(1))),()) preference(1,(1,2),2,for(atom(isFattyFish(1))),()) preference(1,(1,3),2,for(atom(isFattyFish(1))),()) preference(1,(1,4),2,for(atom(hasPrice(1))),()) preference(1,(1,1),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 20 4
+Answer: 8
+preference(1,(1,5),0,for(neg(atom(hasMajorGrp(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,5),2,for(neg(atom(isPopular(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isVeg(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 19 5
+Answer: 9
+preference(1,(1,5),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,5),2,for(neg(atom(isLight(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isVeg(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 18 5
+Answer: 10
+preference(1,(1,5),0,for(atom(hasMajorGrp(0))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,5),3,for(neg(atom(isPopular(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isVeg(1))),()) preference(1,(1,5),2,for(atom(isTuna(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 16 5
+Answer: 11
+preference(1,(1,5),0,for(atom(hasMajorGrp(0))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,5),3,for(neg(atom(isLight(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isVeg(1))),()) preference(1,(1,5),2,for(atom(isTuna(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 15 5
+Answer: 12
+preference(1,(1,5),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,5),2,for(neg(atom(isSpecial(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isVeg(1))),()) preference(1,(1,5),3,for(atom(hasMajorGrp(0))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 13 5
+Answer: 13
+preference(1,(1,5),0,for(neg(atom(isTuna(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,5),2,for(neg(atom(isRaw(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,5),4,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,5),3,for(atom(isPale(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 12 5
+Answer: 14
+preference(1,(1,5),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,5),4,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,5),2,for(atom(hasMinorGrp(0))),()) preference(1,(1,5),3,for(atom(isPale(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 11 5
+Answer: 15
+preference(1,(1,5),0,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,5),4,for(neg(atom(isRaw(0)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,5),2,for(atom(isPale(1))),()) preference(1,(1,5),3,for(atom(isTuna(1))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 10 5
+Answer: 16
+preference(1,(1,6),0,for(neg(atom(hasStyle(1)))),()) preference(1,(1,7),0,for(atom(isSpecial(1))),()) preference(1,(1,8),0,for(atom(isFattyFish(1))),()) preference(1,(1,6),1,for(neg(atom(isPale(1)))),()) preference(1,(1,7),1,for(neg(atom(isPopular(1)))),()) preference(1,(1,8),1,for(neg(atom(isPale(1)))),()) preference(1,(1,6),2,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),2,for(neg(atom(isPale(1)))),()) preference(1,(1,8),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,7),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,8),3,for(neg(atom(isTuna(1)))),()) preference(1,(1,5),4,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,8),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),1,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,5),2,for(atom(isPale(1))),()) preference(1,(1,5),3,for(atom(hasMinorGrp(0))),()) preference(1,(1,6),3,for(atom(hasPrice(0))),()) preference(1,aso)
+Optimization: 7 5
+Answer: 17
+preference(1,(1,2),0,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,4),0,for(neg(atom(isPale(1)))),()) preference(1,(1,5),0,for(atom(isSweet(1))),()) preference(1,(1,6),0,for(neg(atom(isPale(1)))),()) preference(1,(1,5),1,for(neg(atom(isRaw(0)))),()) preference(1,(1,4),2,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,5),2,for(neg(atom(hasPrice(0)))),()) preference(1,(1,6),2,for(neg(atom(isRaw(0)))),()) preference(1,(1,2),1,for(atom(isRaw(0))),()) preference(1,(1,4),1,for(atom(isPopular(1))),()) preference(1,(1,6),1,for(atom(isPopular(1))),()) preference(1,(1,2),2,for(atom(hasPrice(0))),()) preference(1,(1,2),3,for(atom(hasMajorGrp(0))),()) preference(1,(1,5),3,for(atom(isLight(1))),()) preference(1,aso)
+Optimization: 7 4
+Answer: 18
+preference(1,(1,4),0,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,6),0,for(atom(isSpecial(1))),()) preference(1,(1,3),1,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,4),1,for(neg(atom(isSpecial(1)))),()) preference(1,(1,6),2,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,6),3,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),4,for(neg(atom(isRaw(0)))),()) preference(1,(1,6),1,for(atom(hasPrice(0))),()) preference(1,(1,7),1,for(atom(isPopular(1))),()) preference(1,(1,4),2,for(atom(hasMajorGrp(0))),()) preference(1,(1,7),2,for(atom(hasMinorGrp(1))),()) preference(1,(1,7),3,for(atom(hasMinorGrp(0))),()) preference(1,aso)
+Optimization: 5 4
+Progression : [1;5] (Error: 4)
+Answer: 19
+preference(1,(1,1),0,for(neg(atom(isSweet(1)))),()) preference(1,(1,3),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,4),0,for(atom(isRaw(1))),()) preference(1,(1,5),0,for(atom(isPopular(1))),()) preference(1,(1,7),0,for(neg(atom(hasPrice(0)))),()) preference(1,(1,3),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,4),3,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,7),3,for(neg(atom(hasMajorGrp(0)))),()) preference(1,(1,3),4,for(neg(atom(isSweet(1)))),()) preference(1,(1,1),1,for(atom(hasStyle(0))),()) preference(1,(1,2),1,for(atom(isPopular(1))),()) preference(1,(1,3),1,for(atom(isPopular(1))),()) preference(1,(1,4),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,5),1,for(atom(hasMajorGrp(1))),()) preference(1,(1,7),1,for(atom(hasPrice(1))),()) preference(1,(1,8),1,for(atom(isPopular(1))),()) preference(1,(1,1),2,for(atom(isSpecial(1))),()) preference(1,(1,2),2,for(atom(hasMinorGrp(1))),()) preference(1,(1,4),2,for(atom(isPopular(1))),()) preference(1,(1,5),2,for(atom(hasPrice(1))),()) preference(1,(1,7),2,for(atom(isPopular(1))),()) preference(1,(1,1),3,for(atom(isSweet(1))),()) preference(1,(1,2),3,for(atom(isFattyFish(1))),()) preference(1,(1,3),3,for(atom(isSpecial(1))),()) preference(1,(1,5),3,for(atom(isPale(1))),()) preference(1,(1,2),4,for(atom(isRaw(1))),()) preference(1,(1,5),4,for(atom(isFattyFish(1))),()) preference(1,(1,7),4,for(atom(isVeg(1))),()) preference(1,aso)
+Optimization: 4 7
+Answer: 20
+preference(1,(1,1),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,3),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,4),0,for(atom(isRaw(1))),()) preference(1,(1,5),0,for(atom(isPopular(1))),()) preference(1,(1,7),0,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),1,for(neg(atom(hasPrice(0)))),()) preference(1,(1,1),2,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,3),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,5),2,for(neg(atom(hasStyle(1)))),()) preference(1,(1,2),3,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,4),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,3),4,for(neg(atom(isSweet(1)))),()) preference(1,(1,1),1,for(atom(isPale(1))),()) preference(1,(1,2),1,for(atom(isPopular(1))),()) preference(1,(1,3),1,for(atom(isPopular(1))),()) preference(1,(1,4),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,5),1,for(atom(hasMajorGrp(1))),()) preference(1,(1,8),1,for(atom(isPopular(1))),()) preference(1,(1,2),2,for(atom(hasMinorGrp(1))),()) preference(1,(1,4),2,for(atom(isRaw(0))),()) preference(1,(1,7),2,for(atom(isSpecial(1))),()) preference(1,(1,1),3,for(atom(isPopular(1))),()) preference(1,(1,5),3,for(atom(isFattyFish(1))),()) preference(1,(1,7),3,for(atom(isFattyFish(1))),()) preference(1,(1,2),4,for(atom(isSpecial(1))),()) preference(1,(1,5),4,for(atom(isSpecial(1))),()) preference(1,aso)
+Optimization: 3 7
+Answer: 21
+preference(1,(1,1),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,3),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,5),0,for(atom(isPopular(1))),()) preference(1,(1,7),0,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),1,for(neg(atom(hasPrice(0)))),()) preference(1,(1,1),2,for(neg(atom(hasMinorGrp(0)))),()) preference(1,(1,3),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,5),2,for(neg(atom(hasStyle(1)))),()) preference(1,(1,3),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,4),3,for(neg(atom(isRaw(0)))),()) preference(1,(1,2),4,for(neg(atom(isPale(1)))),()) preference(1,(1,3),4,for(neg(atom(isSweet(1)))),()) preference(1,(1,1),1,for(atom(isPale(1))),()) preference(1,(1,2),1,for(atom(isPopular(1))),()) preference(1,(1,3),1,for(atom(isPopular(1))),()) preference(1,(1,4),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,5),1,for(atom(hasMajorGrp(1))),()) preference(1,(1,8),1,for(atom(isPopular(1))),()) preference(1,(1,2),2,for(atom(hasMinorGrp(1))),()) preference(1,(1,4),2,for(atom(hasMinorGrp(0))),()) preference(1,(1,7),2,for(atom(isSpecial(1))),()) preference(1,(1,1),3,for(atom(isPopular(1))),()) preference(1,(1,2),3,for(atom(isFattyFish(1))),()) preference(1,(1,5),3,for(atom(isFattyFish(1))),()) preference(1,(1,7),3,for(atom(isFattyFish(1))),()) preference(1,(1,5),4,for(atom(isSpecial(1))),()) preference(1,aso)
+Optimization: 2 7
+Progression : [2;2] (Error: 0)
+Progression : 2 [1;7] (Error: 6)
+Answer: 22
+preference(1,(1,3),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,4),0,for(atom(isRaw(1))),()) preference(1,(1,7),0,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),1,for(neg(atom(hasPrice(0)))),()) preference(1,(1,1),2,for(neg(atom(isPopular(1)))),()) preference(1,(1,5),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,2),3,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,3),4,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,1),1,for(atom(isPopular(1))),()) preference(1,(1,2),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,3),1,for(atom(isRaw(0))),()) preference(1,(1,4),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,2),2,for(atom(isPopular(1))),()) preference(1,(1,3),2,for(atom(isPopular(1))),()) preference(1,(1,7),2,for(atom(isSpecial(1))),()) preference(1,(1,1),3,for(atom(isRaw(1))),()) preference(1,(1,3),3,for(atom(isTuna(1))),()) preference(1,(1,5),3,for(atom(isRaw(1))),()) preference(1,(1,7),3,for(atom(isFattyFish(1))),()) preference(1,(1,2),4,for(atom(isSpecial(1))),()) preference(1,(1,5),4,for(atom(isFattyFish(1))),()) preference(1,aso)
+Optimization: 2 6
+Answer: 23
+preference(1,(1,3),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,7),0,for(neg(atom(isFattyFish(1)))),()) preference(1,(1,7),1,for(neg(atom(hasPrice(0)))),()) preference(1,(1,1),2,for(neg(atom(isPopular(1)))),()) preference(1,(1,5),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,2),3,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,5),3,for(neg(atom(isPale(1)))),()) preference(1,(1,3),4,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,1),1,for(atom(isPopular(1))),()) preference(1,(1,2),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,3),1,for(atom(isRaw(0))),()) preference(1,(1,5),1,for(atom(isPopular(1))),()) preference(1,(1,2),2,for(atom(hasMinorGrp(0))),()) preference(1,(1,3),2,for(atom(isPopular(1))),()) preference(1,(1,7),2,for(atom(isSpecial(1))),()) preference(1,(1,1),3,for(atom(isRaw(1))),()) preference(1,(1,3),3,for(atom(isTuna(1))),()) preference(1,(1,7),3,for(atom(isFattyFish(1))),()) preference(1,(1,2),4,for(atom(isSpecial(1))),()) preference(1,(1,5),4,for(atom(isFattyFish(1))),()) preference(1,aso)
+Optimization: 2 5
+Progression : 2 [2;5] (Error: 1.5)
+Answer: 24
+preference(1,(1,2),0,for(neg(atom(isPale(1)))),()) preference(1,(1,5),0,for(neg(atom(isPopular(1)))),()) preference(1,(1,2),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,1),3,for(neg(atom(isPale(1)))),()) preference(1,(1,5),3,for(neg(atom(isPale(1)))),()) preference(1,(1,3),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,1),1,for(atom(isPopular(1))),()) preference(1,(1,2),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,3),1,for(atom(isPopular(1))),()) preference(1,(1,5),1,for(atom(isFattyFish(1))),()) preference(1,(1,1),2,for(atom(hasMinorGrp(1))),()) preference(1,(1,3),2,for(atom(isPale(1))),()) preference(1,(1,5),2,for(atom(hasMinorGrp(0))),()) preference(1,(1,2),3,for(atom(isCreamy(1))),()) preference(1,(1,3),3,for(atom(isFattyFish(1))),()) preference(1,(1,2),4,for(atom(isSpecial(1))),()) preference(1,(1,5),4,for(atom(isSpecial(1))),()) preference(1,aso)
+Optimization: 2 4
+Answer: 25
+preference(1,(1,1),0,for(neg(atom(hasMinorGrp(1)))),()) preference(1,(1,2),2,for(neg(atom(hasMinorGrp(2)))),()) preference(1,(1,3),4,for(neg(atom(isPopular(1)))),()) preference(1,(1,1),1,for(atom(isPopular(1))),()) preference(1,(1,2),1,for(atom(isPopular(1))),()) preference(1,(1,3),1,for(atom(hasMinorGrp(1))),()) preference(1,(1,1),2,for(atom(isTuna(1))),()) preference(1,(1,3),2,for(atom(isPale(1))),()) preference(1,(1,1),3,for(atom(isRaw(1))),()) preference(1,(1,2),3,for(atom(hasPrice(1))),()) preference(1,(1,3),3,for(atom(isPopular(1))),()) preference(1,(1,2),4,for(atom(isSpecial(1))),()) preference(1,aso)
+Optimization: 2 3
+OPTIMUM FOUND
+
+Models       : 25
+  Optimum    : yes
+Optimization : 2 3
+Calls        : 1
+Time         : 40.479s (Solving: 33.90s 1st Model: 0.18s Unsat: 28.05s)
+CPU Time     : 141.992s
+Threads      : 4        (Winner: 1)
+
+Choices      : 412240   (Domain: 9317)
+Conflicts    : 109105   (Analyzed: 109099)
+Restarts     : 138      (Average: 790.57 Last: 6978)
+Model-Level  : 509.2   
+Problems     : 12       (Average Length: 0.33 Splits: 0)
+Lemmas       : 183342   (Deleted: 95059)
+  Binary     : 5098     (Ratio:   2.78%)
+  Ternary    : 11734    (Ratio:   6.40%)
+  Conflict   : 109098   (Average Length:   96.0 Ratio:  59.51%) 
+  Loop       : 0        (Average Length:    0.0 Ratio:   0.00%) 
+  Other      : 74244    (Average Length:   29.8 Ratio:  40.49%) 
+  Distributed: 24813    (Ratio:  22.74% Average LBD: 3.20) 
+  Integrated : 74438    (Ratio: 300.00% Unit: 366 Average Jumps: 73.17)
+Backjumps    : 109099   (Average:  3.36 Max: 893 Sum: 366724)
+  Executed   : 109081   (Average:  3.36 Max: 893 Sum: 366481 Ratio:  99.93%)
+  Bounded    : 18       (Average: 13.50 Max:  33 Sum:    243 Ratio:   0.07%)
+
+Rules        : 2467337 
+  Choice     : 41      
+  Minimize   : 2       
+Atoms        : 677531  
+Bodies       : 802899  
+  Count      : 1768    
+Equivalences : 2073603  (Atom=Atom: 595268 Body=Body: 641870 Other: 836465)
+Tight        : Yes
+Variables    : 92991    (Eliminated:    0 Frozen: 61215)
+Constraints  : 1936653  (Binary:  95.3% Ternary:   4.1% Other:   0.7%)
+
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> atom(isPale(1)) >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(1))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(isFattyFish(1))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> atom(isPale(1)) >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(1))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(hasStyle(0))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> atom(isPale(1)) >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(0))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(isVeg(1))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> atom(isPale(1)) >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(0))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(hasStyle(0))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> atom(isPale(1)) >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isSpecial(1))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(hasStyle(0))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(0))  >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(hasStyle(1))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(isFattyFish(1))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isFattyFish(1))  >> not atom(hasPrice(0))  >> atom(hasPrice(0)) >> not atom(isTuna(1))  || atom(hasPrice(1)) ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isRaw(0))  >> not atom(hasMajorGrp(0))  ; 
+  atom(hasPrice(1)) >> atom(isFattyFish(1)) >> not atom(isSpecial(1))  >> not atom(isLight(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasPrice(1)) >> not atom(hasStyle(0))  >> not atom(isSpecial(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isVeg(1)) >> not atom(isPopular(1))  || not atom(hasMajorGrp(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isVeg(1)) >> not atom(isLight(1))  || not atom(isPopular(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isVeg(1)) >> atom(isTuna(1)) >> not atom(isPopular(1))  || atom(hasMajorGrp(0)) ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isVeg(1)) >> atom(isTuna(1)) >> not atom(isLight(1))  || atom(hasMajorGrp(0)) ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isVeg(1)) >> not atom(isSpecial(1))  >> atom(hasMajorGrp(0)) || not atom(isPopular(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPopular(1)) >> not atom(isRaw(1))  >> atom(isPale(1)) >> not atom(hasMinorGrp(0))  || not atom(isTuna(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPopular(1)) >> atom(hasMinorGrp(0)) >> atom(isPale(1)) >> not atom(isFattyFish(1))  || not atom(isPopular(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPopular(1)) >> atom(isPale(1)) >> atom(isTuna(1)) >> not atom(isRaw(0))  || not atom(isFattyFish(1))  ; 
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isPale(1))  >> not atom(isFattyFish(1))  >> atom(hasPrice(0)) || not atom(hasStyle(1))  ; 
+  not atom(isPopular(1))  >> not atom(isPale(1))  >> not atom(isTuna(1))  || atom(isSpecial(1)) ; 
+  not atom(isPale(1))  >> not atom(hasMinorGrp(1))  >> not atom(isTuna(1))  >> not atom(isPopular(1))  || atom(isFattyFish(1)) ; 
+  atom(hasMajorGrp(0)) ; 
+  atom(isPopular(1)) >> atom(isPale(1)) >> atom(hasMinorGrp(0)) >> not atom(isFattyFish(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isRaw(0)) >> atom(hasPrice(0)) >> atom(hasMajorGrp(0)) || not atom(hasMinorGrp(0))  ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(1))  || not atom(isPale(1))  ; 
+  not atom(isRaw(0))  >> not atom(hasPrice(0))  >> atom(isLight(1)) || atom(isSweet(1)) ; 
+  atom(isPopular(1)) >> not atom(isRaw(0))  || not atom(isPale(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  not atom(isSpecial(1))  >> atom(hasMajorGrp(0)) || not atom(hasMinorGrp(0))  ; 
+  atom(hasPrice(0)) >> not atom(hasMinorGrp(0))  >> not atom(isFattyFish(1))  || atom(isSpecial(1)) ; 
+  not atom(hasMinorGrp(1))  ; 
+  atom(isPopular(1)) >> atom(hasMinorGrp(1)) >> atom(hasMinorGrp(0)) >> not atom(isRaw(0))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasStyle(0)) >> atom(isSpecial(1)) >> atom(isSweet(1)) || not atom(isSweet(1))  ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> atom(isSpecial(1)) >> not atom(isSweet(1))  || not atom(isPopular(1))  ; 
+  atom(hasMinorGrp(1)) >> atom(isPopular(1)) >> not atom(hasMinorGrp(0))  || atom(isRaw(1)) ; 
+  atom(hasMajorGrp(1)) >> atom(hasPrice(1)) >> atom(isPale(1)) >> atom(isFattyFish(1)) || atom(isPopular(1)) ; 
+  atom(hasPrice(1)) >> atom(isPopular(1)) >> not atom(hasMajorGrp(0))  >> atom(isVeg(1)) || not atom(hasPrice(0))  ; 
+  atom(isPopular(1)) >> atom(hasMinorGrp(1)) >> atom(isFattyFish(1)) >> atom(isRaw(1)) ; 
+  atom(isPopular(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPale(1)) >> not atom(hasMinorGrp(0))  >> atom(isPopular(1)) || not atom(isPopular(1))  ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> not atom(isRaw(0))  >> not atom(isSweet(1))  || not atom(isPopular(1))  ; 
+  atom(hasMinorGrp(1)) >> atom(isRaw(0)) >> not atom(isRaw(0))  || atom(isRaw(1)) ; 
+  atom(hasMajorGrp(1)) >> not atom(hasStyle(1))  >> atom(isFattyFish(1)) >> atom(isSpecial(1)) || atom(isPopular(1)) ; 
+  not atom(hasPrice(0))  >> atom(isSpecial(1)) >> atom(isFattyFish(1)) || not atom(isFattyFish(1))  ; 
+  atom(isPopular(1)) >> atom(hasMinorGrp(1)) >> not atom(hasMinorGrp(2))  >> atom(isSpecial(1)) ; 
+  atom(isPopular(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPale(1)) >> not atom(hasMinorGrp(0))  >> atom(isPopular(1)) || not atom(isPopular(1))  ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> not atom(isRaw(0))  >> not atom(isSweet(1))  || not atom(isPopular(1))  ; 
+  atom(hasMajorGrp(1)) >> not atom(hasStyle(1))  >> atom(isFattyFish(1)) >> atom(isSpecial(1)) || atom(isPopular(1)) ; 
+  not atom(hasPrice(0))  >> atom(isSpecial(1)) >> atom(isFattyFish(1)) || not atom(isFattyFish(1))  ; 
+  atom(isPopular(1)) >> atom(hasMinorGrp(1)) >> atom(isFattyFish(1)) >> not atom(isPale(1))  ; 
+  atom(hasMinorGrp(1)) >> atom(hasMinorGrp(0)) >> not atom(isRaw(0))  ; 
+  atom(isPopular(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isRaw(0)) >> atom(isPopular(1)) >> atom(isTuna(1)) >> not atom(hasMinorGrp(1))  || not atom(isPopular(1))  ; 
+  atom(hasMinorGrp(1)) || atom(isRaw(1)) ; 
+  not atom(hasPrice(0))  >> atom(isSpecial(1)) >> atom(isFattyFish(1)) || not atom(isFattyFish(1))  ; 
+  atom(isPopular(1)) >> not atom(isPopular(1))  >> atom(isRaw(1)) ; 
+  atom(hasMinorGrp(1)) >> atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> atom(isSpecial(1)) ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> atom(isRaw(1)) >> atom(isFattyFish(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isRaw(0)) >> atom(isPopular(1)) >> atom(isTuna(1)) >> not atom(hasMinorGrp(1))  || not atom(isPopular(1))  ; 
+  not atom(hasPrice(0))  >> atom(isSpecial(1)) >> atom(isFattyFish(1)) || not atom(isFattyFish(1))  ; 
+  atom(isPopular(1)) >> not atom(isPopular(1))  >> atom(isRaw(1)) ; 
+  atom(hasMinorGrp(1)) >> atom(hasMinorGrp(0)) >> not atom(hasMinorGrp(2))  >> atom(isSpecial(1)) ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> not atom(isPale(1))  >> atom(isFattyFish(1)) 
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(hasMinorGrp(1)) >> not atom(hasMinorGrp(2))  >> atom(isCreamy(1)) >> atom(isSpecial(1)) || not atom(isPale(1))  ; 
+  atom(isFattyFish(1)) >> atom(hasMinorGrp(0)) >> not atom(isPale(1))  >> atom(isSpecial(1)) || not atom(isPopular(1))  ; 
+  atom(isPopular(1)) >> atom(hasMinorGrp(1)) >> not atom(isPale(1))  ; 
+  atom(isPopular(1)) >> atom(isPale(1)) >> atom(isFattyFish(1)) >> not atom(isPopular(1))  
+}.
+
+Learned preference statement: 
+
+#preference(1,aso){
+  atom(isPopular(1)) >> atom(isTuna(1)) >> atom(isRaw(1)) || not atom(hasMinorGrp(1))  ; 
+  atom(isPopular(1)) >> not atom(hasMinorGrp(2))  >> atom(hasPrice(1)) >> atom(isSpecial(1)) ; 
+  atom(hasMinorGrp(1)) >> atom(isPale(1)) >> atom(isPopular(1)) >> not atom(isPopular(1))  
+}.
