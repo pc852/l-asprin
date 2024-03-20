@@ -1,0 +1,170 @@
+runsolver version 3.4.0 (svn: 3018) Copyright (C) 2010-2013 Olivier ROUSSEL
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+NUMA information:
+  number of nodes: 2
+  memory of node 0: 31924 MiB (25358 MiB free)
+  memory of node 1: 32247 MiB (26525 MiB free)
+  node distances:
+     10  21
+     21  10
+
+command line: ../../../../../../../../../../../../programs/runsolver-3.4.0 -M 20000 -w runsolver.watcher -o runsolver.solver -W 599 ../../../../../../../../../../../../programs/asprin-vL-1.0 --stats=1 --print_output_instances --min_element -t4 
+
+running on 6 cores: 9,11,13,15,37,39
+
+Enforcing wall clock limit (soft limit, will send SIGTERM then SIGKILL): 599 seconds
+Enforcing VSIZE limit (soft limit, will send SIGTERM then SIGKILL): 20480000 KiB
+Enforcing VSIZE limit (hard limit, stack expansion will fail with SIGSEGV, brk() and mmap() will return ENOMEM): 20531200 KiB
+Linux 5.10.0-0.deb10.26-amd64
+Current StackSize limit: 8192 KiB
+
+solver pid=31806, runsolver pid=31804
+
+[startup+0.100064 s]*
+/proc/loadavg: 22.51 23.62 23.77 20/567 31812
+/proc/meminfo: memFree=53124236/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1860 CPUtime=0.04 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) R 31804 31806 31487 0 -1 4194304 179 0 219 0 2 2 0 0 20 0 1 0 291491028 2662400 465 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 33 0 0 3 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 465 407 7 0 87 0
+Current children cumulated CPU time: 0.04 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1860 KiB
+
+[startup+0.224447 s]*
+/proc/loadavg: 22.51 23.62 23.77 19/567 31812
+/proc/meminfo: memFree=53119084/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1860 CPUtime=0.1 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) R 31804 31806 31487 0 -1 4194304 219 0 461 0 4 6 0 0 20 0 1 0 291491028 2662400 465 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 35 0 0 8 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 465 407 7 0 87 0
+Current children cumulated CPU time: 0.1 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1860 KiB
+
+[startup+0.338669 s]*
+/proc/loadavg: 22.51 23.62 23.77 19/567 31812
+/proc/meminfo: memFree=53115320/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1860 CPUtime=0.14 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) R 31804 31806 31487 0 -1 4194304 237 0 666 0 5 9 0 0 20 0 1 0 291491028 2662400 465 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 35 0 0 12 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 465 407 7 0 87 0
+Current children cumulated CPU time: 0.14 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1860 KiB
+
+[startup+0.700417 s]
+/proc/loadavg: 22.51 23.62 23.77 19/567 31812
+/proc/meminfo: memFree=53102240/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1860 CPUtime=0.27 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) D 31804 31806 31487 0 -1 4194304 245 0 1244 0 13 14 0 0 20 0 1 0 291491028 2662400 465 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 37 0 0 23 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 465 407 7 0 87 0
+Current children cumulated CPU time: 0.27 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1860 KiB
+
+[startup+1.50048 s]
+/proc/loadavg: 22.51 23.62 23.77 19/567 31812
+/proc/meminfo: memFree=53076460/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1860 CPUtime=0.58 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) S 31804 31806 31487 0 -1 4194304 247 0 2662 0 31 27 0 0 20 0 1 0 291491028 2662400 465 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 37 0 0 50 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 465 407 7 0 87 0
+Current children cumulated CPU time: 0.58 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1860 KiB
+
+[startup+3.14481 s]
+/proc/loadavg: 22.51 23.62 23.77 22/571 31816
+/proc/meminfo: memFree=52963852/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1808 CPUtime=0.65 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) S 31804 31806 31487 0 -1 4194304 258 0 2952 0 36 29 0 0 20 0 1 0 291491028 2662400 452 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 2146631423 1 0 0 17 39 0 0 56 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 452 394 7 0 87 0
+[pid=31816] ppid=31806 vsize=53248 memory=45692 CPUtime=1.42 cores=9,11,13,15,33,35,37,39
+/proc/31816/stat : 31816 (asprin-vL-1.0) R 31806 31806 31487 0 -1 4194304 9211 0 32 0 139 3 0 0 20 0 1 0 291491196 54525952 11423 18446744073709551615 4202496 4228909 140728224882944 0 0 0 0 0 25184775 0 0 0 17 9 0 0 0 0 0 4251112 4252320 35262464 140728224887943 140728224888055 140728224888055 140728224894851 0
+/proc/31816/statm: 13312 11423 2908 7 0 9537 0
+Current children cumulated CPU time: 2.07 s
+Current children cumulated vsize: 55848 KiB
+Current children cumulated memory: 47500 KiB
+heavy processes:
+
+[startup+6.30049 s]
+/proc/loadavg: 22.39 23.58 23.76 19/568 31816
+/proc/meminfo: memFree=52657368/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1808 CPUtime=0.65 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) S 31804 31806 31487 0 -1 4194304 258 0 2952 0 36 29 0 0 20 0 1 0 291491028 2662400 452 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 2146631423 1 0 0 17 39 0 0 56 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 452 394 7 0 87 0
+[pid=31816] ppid=31806 vsize=270516 memory=258912 CPUtime=4.57 cores=9,11,13,15,33,35,37,39
+/proc/31816/stat : 31816 (asprin-vL-1.0) R 31806 31806 31487 0 -1 4194304 62242 0 32 0 444 13 0 0 20 0 1 0 291491196 277008384 64728 18446744073709551615 4202496 4228909 140728224882944 0 0 0 0 0 25184775 0 0 0 17 9 0 0 0 0 0 4251112 4252320 35262464 140728224887943 140728224888055 140728224888055 140728224894851 0
+/proc/31816/statm: 67629 64728 2908 7 0 63854 0
+Current children cumulated CPU time: 5.22 s
+Current children cumulated vsize: 273116 KiB
+Current children cumulated memory: 260720 KiB
+
+[startup+12.7063 s]
+/proc/loadavg: 22.28 23.54 23.74 22/571 31836
+/proc/meminfo: memFree=52548356/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1808 CPUtime=23.68 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) R 31804 31806 31487 0 -1 4194304 270 170799 2952 32 36 31 2272 29 20 0 1 0 291491028 2662400 452 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 15 0 0 56 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 452 394 7 0 87 0
+Current children cumulated CPU time: 23.68 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1808 KiB
+
+[startup+12.7113 s]
+# the end of solver process 31806 was just reported to runsolver
+# cumulated CPU time of all completed processes:  user=23.0844 s, system=0.615291 s
+
+Solver just ended.
+??? end of watcher thread
+Dumping a history of the last processes samples
+
+[startup+12.7063 s]
+/proc/loadavg: 22.28 23.54 23.74 22/571 31836
+/proc/meminfo: memFree=52548356/65711980 swapFree=1048568/1048572
+[pid=31806] ppid=31804 vsize=2600 memory=1808 CPUtime=23.68 cores=9,11,13,15,33,35,37,39
+/proc/31806/stat : 31806 (asprin-vL-1.0) R 31804 31806 31487 0 -1 4194304 270 170799 2952 32 36 31 2272 29 20 0 1 0 291491028 2662400 452 18446744073709551615 4202496 4228909 140736700260384 0 0 0 0 0 0 0 0 0 17 15 0 0 56 0 0 4251112 4252320 24657920 140736700265751 140736700265863 140736700265863 140736700272573 0
+/proc/31806/statm: 650 452 394 7 0 87 0
+Current children cumulated CPU time: 23.68 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1808 KiB
+
+Child status: 0
+Real time (s): 12.7114
+CPU time (s): 23.6997
+CPU user time (s): 23.0844
+CPU system time (s): 0.615291
+CPU usage (%): 186.445
+Max. virtual memory (cumulated for all children) (KiB): 541220
+Max. memory (cumulated for all children) (KiB): 364848
+
+getrusage(RUSAGE_CHILDREN,...) data:
+user time used= 23.0844
+system time used= 0.615291
+maximum resident set size= 363040
+integral shared memory size= 0
+integral unshared data size= 0
+integral unshared stack size= 0
+page reclaims= 171082
+page faults= 2984
+swaps= 0
+block input operations= 845191
+block output operations= 121744
+messages sent= 0
+messages received= 0
+signals received= 0
+voluntary context switches= 6340
+involuntary context switches= 3034
+
+
+# summary of solver processes directly reported to runsolver:
+#   pid: 31806
+#   total CPU time (s): 23.6997
+#   total CPU user time (s): 23.0844
+#   total CPU system time (s): 0.615291
+
+??? end of timestamper thread
+runsolver used 0.407349 second user time and 0.403192 second system time
+
+The end

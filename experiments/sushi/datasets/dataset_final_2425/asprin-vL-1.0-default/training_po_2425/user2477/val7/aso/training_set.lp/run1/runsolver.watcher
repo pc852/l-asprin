@@ -1,0 +1,187 @@
+runsolver version 3.4.0 (svn: 3018) Copyright (C) 2010-2013 Olivier ROUSSEL
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+NUMA information:
+  number of nodes: 2
+  memory of node 0: 31924 MiB (27277 MiB free)
+  memory of node 1: 32247 MiB (25104 MiB free)
+  node distances:
+     10  21
+     21  10
+
+command line: ../../../../../../../../../../../../programs/runsolver-3.4.0 -M 20000 -w runsolver.watcher -o runsolver.solver -W 599 ../../../../../../../../../../../../programs/asprin-vL-1.0 --stats=1 --print_output_instances --min_element -t4 
+
+running on 6 cores: 8,10,12,14,36,38
+
+Enforcing wall clock limit (soft limit, will send SIGTERM then SIGKILL): 599 seconds
+Enforcing VSIZE limit (soft limit, will send SIGTERM then SIGKILL): 20480000 KiB
+Enforcing VSIZE limit (hard limit, stack expansion will fail with SIGSEGV, brk() and mmap() will return ENOMEM): 20531200 KiB
+Linux 5.10.0-0.deb10.26-amd64
+solver pid=7034, runsolver pid=7032
+Current StackSize limit: 8192 KiB
+
+
+[startup+0.100094 s]*
+/proc/loadavg: 24.06 23.72 23.68 21/570 7040
+/proc/meminfo: memFree=53634172/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1868 CPUtime=0.03 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) D 7032 7034 6580 0 -1 4194304 179 0 213 0 0 3 0 0 20 0 1 0 287779919 2662400 467 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 0 0 0 0 17 34 0 0 4 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 467 409 7 0 87 0
+Current children cumulated CPU time: 0.03 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1868 KiB
+
+[startup+0.224758 s]*
+/proc/loadavg: 24.06 23.72 23.68 21/570 7040
+/proc/meminfo: memFree=53628456/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1868 CPUtime=0.09 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) R 7032 7034 6580 0 -1 4194304 217 0 447 0 3 6 0 0 20 0 1 0 287779919 2662400 467 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 0 0 0 0 17 34 0 0 8 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 467 409 7 0 87 0
+Current children cumulated CPU time: 0.09 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1868 KiB
+
+[startup+0.337036 s]*
+/proc/loadavg: 24.06 23.72 23.68 21/570 7040
+/proc/meminfo: memFree=53624156/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1868 CPUtime=0.13 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) R 7032 7034 6580 0 -1 4194304 237 0 639 0 5 8 0 0 20 0 1 0 287779919 2662400 467 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 0 0 0 0 17 34 0 0 12 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 467 409 7 0 87 0
+Current children cumulated CPU time: 0.13 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1868 KiB
+
+[startup+0.700282 s]
+/proc/loadavg: 24.06 23.72 23.68 23/570 7040
+/proc/meminfo: memFree=53614328/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1868 CPUtime=0.25 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) S 7032 7034 6580 0 -1 4194304 245 0 1203 0 12 13 0 0 20 0 1 0 287779919 2662400 467 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 0 0 0 0 17 34 0 0 24 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 467 409 7 0 87 0
+Current children cumulated CPU time: 0.25 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1868 KiB
+
+[startup+1.50046 s]
+/proc/loadavg: 24.06 23.72 23.68 21/571 7041
+/proc/meminfo: memFree=53593688/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1868 CPUtime=0.54 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) R 7032 7034 6580 0 -1 4194304 247 0 2511 0 28 26 0 0 20 0 1 0 287779919 2662400 467 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 0 0 0 0 17 10 0 0 53 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 467 409 7 0 87 0
+Current children cumulated CPU time: 0.54 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1868 KiB
+
+[startup+3.14594 s]
+/proc/loadavg: 23.89 23.69 23.68 22/572 7042
+/proc/meminfo: memFree=53521868/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1816 CPUtime=0.64 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) S 7032 7034 6580 0 -1 4194304 258 0 2952 0 33 31 0 0 20 0 1 0 287779919 2662400 454 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 2146631423 1 0 0 17 34 0 0 63 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 454 396 7 0 87 0
+[pid=7042] ppid=7034 vsize=52364 memory=46060 CPUtime=1.32 cores=8,10,12,14,32,34,36,38
+/proc/7042/stat : 7042 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194304 9222 0 32 0 129 3 0 0 20 0 1 0 287780097 53620736 11515 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 17 10 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+/proc/7042/statm: 13091 11515 2981 7 0 9316 0
+Current children cumulated CPU time: 1.96 s
+Current children cumulated vsize: 54964 KiB
+Current children cumulated memory: 47876 KiB
+heavy processes:
+
+[startup+6.30054 s]
+/proc/loadavg: 23.89 23.69 23.68 22/572 7042
+/proc/meminfo: memFree=53290396/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1816 CPUtime=0.64 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) S 7032 7034 6580 0 -1 4194304 258 0 2952 0 33 31 0 0 20 0 1 0 287779919 2662400 454 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 2146631423 1 0 0 17 34 0 0 63 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 454 396 7 0 87 0
+[pid=7042] ppid=7034 vsize=271168 memory=260852 CPUtime=4.47 cores=8,10,12,14,32,34,36,38
+/proc/7042/stat : 7042 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194304 62670 0 32 0 434 13 0 0 20 0 1 0 287780097 277676032 65213 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 17 10 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+/proc/7042/statm: 67792 65213 2997 7 0 64017 0
+Current children cumulated CPU time: 5.11 s
+Current children cumulated vsize: 273768 KiB
+Current children cumulated memory: 262668 KiB
+
+[startup+12.7006 s]
+/proc/loadavg: 23.69 23.65 23.66 25/575 7045
+/proc/meminfo: memFree=53122948/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1816 CPUtime=0.64 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) S 7032 7034 6580 0 -1 4194304 258 0 2952 0 33 31 0 0 20 0 1 0 287779919 2662400 454 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 2146631423 1 0 0 17 34 0 0 63 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 454 396 7 0 87 0
+[pid=7042] ppid=7034 vsize=537076 memory=365212 CPUtime=23.82 cores=8,10,12,14,32,34,36,38
+/proc/7042/stat : 7042 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194304 134725 0 32 0 2360 22 0 0 20 0 4 0 287780097 549965824 91303 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 17 10 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+/proc/7042/statm: 134269 91303 3013 7 0 97357 0
+[pid=7042/tid=7043] ppid=7034 vsize=537076 memory=97536 CPUtime=4.36 cores=8,10,12,14,32,34,36,38
+/proc/7042/task/7043/stat : 7043 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194368 11048 0 0 0 435 1 0 0 20 0 4 0 287780752 549965824 91303 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 -1 36 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+[pid=7042/tid=7044] ppid=7034 vsize=537076 memory=1816 CPUtime=4.32 cores=8,10,12,14,32,34,36,38
+/proc/7042/task/7044/stat : 7044 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194368 10787 0 0 0 431 1 0 0 20 0 4 0 287780752 549965824 91303 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 -1 8 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+[pid=7042/tid=7045] ppid=7034 vsize=537076 memory=2996 CPUtime=4.33 cores=8,10,12,14,32,34,36,38
+/proc/7042/task/7045/stat : 7045 (asprin-vL-1.0) R 7034 7034 6580 0 -1 4194368 12501 0 0 0 432 1 0 0 20 0 4 0 287780752 549965824 91303 18446744073709551615 4202496 4228909 140723909858144 0 0 0 0 0 25184775 0 0 0 -1 14 0 0 0 0 0 4251112 4252320 18485248 140723909862534 140723909862646 140723909862646 140723909869443 0
+Current children cumulated CPU time: 24.46 s
+Current children cumulated vsize: 539676 KiB
+Current children cumulated memory: 367028 KiB
+
+[startup+25.5005 s]
+/proc/loadavg: 23.74 23.66 23.67 25/574 7045
+/proc/meminfo: memFree=52917372/65711980 swapFree=993104/1048572
+[pid=7034] ppid=7032 vsize=2600 memory=1816 CPUtime=0.64 cores=8,10,12,14,32,34,36,38
+/proc/7034/stat : 7034 (asprin-vL-1.0) S 7032 7034 6580 0 -1 4194304 258 0 2952 0 33 31 0 0 20 0 1 0 287779919 2662400 454 18446744073709551615 4202496 4228909 140721725543456 0 0 0 0 0 2146631423 1 0 0 17 34 0 0 63 0 0 4251112 4252320 30134272 140721725551894 140721725552006 140721725552006 140721725558717 0
+/proc/7034/statm: 650 454 396 7 0 87 0
+Current children cumulated CPU time: 0.64 s
+Current children cumulated vsize: 2600 KiB
+Current children cumulated memory: 1816 KiB
+heavy processes:
+
+[startup+25.5334 s]
+# the end of solver process 7034 was just reported to runsolver
+# cumulated CPU time of all completed processes:  user=74.2442 s, system=0.713799 s
+
+Solver just ended.
+??? end of watcher thread
+Dumping a history of the last processes samples
+
+[startup+25.5005 s]*
+/proc/loadavg: 23.74 23.66 23.67 22/571 7045
+/proc/meminfo: memFree=53043888/65711980 swapFree=993104/1048572
+Current children cumulated CPU time: 0 s
+Current children cumulated vsize: 0 KiB
+Current children cumulated memory: 0 KiB
+
+Child status: 0
+Real time (s): 25.5462
+CPU time (s): 74.958
+CPU user time (s): 74.2442
+CPU system time (s): 0.713799
+CPU usage (%): 293.422
+Max. virtual memory (cumulated for all children) (KiB): 539676
+Max. memory (cumulated for all children) (KiB): 379300
+
+getrusage(RUSAGE_CHILDREN,...) data:
+user time used= 74.2442
+system time used= 0.713799
+maximum resident set size= 377484
+integral shared memory size= 0
+integral unshared data size= 0
+integral unshared stack size= 0
+page reclaims= 286699
+page faults= 2984
+swaps= 0
+block input operations= 845703
+block output operations= 121858
+messages sent= 0
+messages received= 0
+signals received= 0
+voluntary context switches= 6499
+involuntary context switches= 3095
+
+
+# summary of solver processes directly reported to runsolver:
+#   pid: 7034
+#   total CPU time (s): 74.958
+#   total CPU user time (s): 74.2442
+#   total CPU system time (s): 0.713799
+
+??? end of timestamper thread
+runsolver used 0.609365 second user time and 0.760656 second system time
+
+The end
