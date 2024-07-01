@@ -10,9 +10,9 @@
 ### Basics
 Answer Set Programming (ASP) is a declarative programming paradigm, falling under the umbrella of logic programming. It supports non-monotonic reasoning to solve problems encoded in ASP as logic programs. An example of a scenario modeled as a logic program:
 
-`weather(clear) :- sky(blue).`
-`weather(cloudy) :- not weather(clear).  `
-`sky(grey).`
+`weather(clear) :- sky(blue).`\
+`weather(cloudy) :- not weather(clear).  `\
+`sky(grey).`\
 
 The first line is a rule stating that if the sky is blue, then the weather must be clear.
 The second line is a rule stating that if the weather is not clear, then the weather must be cloudy. 
@@ -20,7 +20,8 @@ The third line is a fact stating that the sky is blue.
 
 The above program is the input to the solver **clingo**. The output of the program is:
 
-`sky(grey). weather(cloudy).`
+`sky(grey). `\
+`weather(cloudy).`\
 
 For more in-depth understanding of ASP and and its immense potential, refer to the [Potsdam Answer Set Solving Collection (Potassco)](https://potassco.org/about/) 
 
@@ -49,5 +50,8 @@ In the cars dataset directory, the input instances to l-asprin are organized as 
 
 In the sushi dataset directory, the input instances to l-asprin are organized as user(respondent) / validation fold / generation type.
 
-### Contributors
-- Chen Peng
+
+
+
+
+
