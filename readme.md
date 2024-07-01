@@ -12,7 +12,7 @@ Answer Set Programming (ASP) is a declarative programming paradigm, falling unde
 
 `weather(clear) :- sky(blue).`\
 `weather(cloudy) :- not weather(clear).  `\
-`sky(grey).`\
+`sky(grey).`
 
 The first line is a rule stating that if the sky is blue, then the weather must be clear.
 The second line is a rule stating that if the weather is not clear, then the weather must be cloudy. 
@@ -21,7 +21,7 @@ The third line is a fact stating that the sky is blue.
 The above program is the input to the solver **clingo**. The output of the program is:
 
 `sky(grey). `\
-`weather(cloudy).`\
+`weather(cloudy).`
 
 For more in-depth understanding of ASP and and its immense potential, refer to the [Potsdam Answer Set Solving Collection (Potassco)](https://potassco.org/about/) 
 
